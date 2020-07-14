@@ -1,0 +1,443 @@
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>HPR</title>
+<link href="/HPR/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/logo2.gif" type="image/x-icon">
+
+  <script language="javascript">
+            function postRequest(strURL){
+                var xmlHttp;
+                if(window.XMLHttpRequest){ // For Mozilla, Safari, ...
+                    var xmlHttp = new XMLHttpRequest();
+                }
+        else if(window.ActiveXObject){ // For Internet Explorer
+            var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlHttp.open('post', strURL, true);
+
+
+
+        xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+
+
+        xmlHttp.onreadystatechange = function(){
+            if (xmlHttp.readyState == 4){
+
+               document.getElementById("time").innerHTML=xmlHttp.responseText;
+
+
+            }
+        }
+       xmlHttp.send(null);
+    }
+
+function call_login(){
+
+
+
+    var searchvalue=document.getElementById("yy").value;
+     var cat=document.getElementById("cat").value;
+    var la=document.getElementById("lan").value;
+   var searchby="date"
+          
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat+"&language="+la;
+
+    postRequest(url);
+}
+
+function call_login1(){
+
+
+
+
+    var searchvalue=document.getElementById("ty").value;
+     var cat=document.getElementById("cat").value;
+    
+   var searchby="title"
+   
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat;
+
+    postRequest(url);
+}
+function call_login2(){
+
+  var searchvalue=document.getElementById("billno").value;
+     var cat=document.getElementById("cat").value;
+
+   var searchby="billno"
+
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat;
+
+    postRequest(url);
+}
+
+
+
+        </script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+                  
+
+ 
+
+
+
+
+
+
+
+        
+       
+        
+   
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+            
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+
+ <div class="header">
+     
+ <img src="/HPR/images/hprbanner.jpg" width="1090px"  height="136px" alt="banner"/>
+
+           
+</div>
+            
+             
+     
+    </body>
+</html>
+
+<div class="menubar"> <!--start of menubar-->
+
+    <ul id="nav">
+        <li class="li1"><a href="/HPR/faces/welcomeJSF.jsp"><p class="langua">Home</p></a></li>
+    
+
+   
+                 
+
+                <li class="li1"><a href="/HPR/faces/photogallery/gallerycategory.jsp"><p class="langua">Gallery</p></a></li>
+
+              <li class="li1 long2"><a href="#"><p class="langua">Secretariat</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=bid" ><p class="langua">Bid</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=vacancy"><p class="langua">Vacancy</p></a></li>
+
+            </ul>
+        </li>
+            <li class="li1 long2"><a href="#"><p class="langua">Publication</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Press Release" ><p class="langua">Press Release</p></a></li>
+                                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Magazine" ><p class="langua">Magazine</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Brochure" ><p class="langua">Brochure </p></a></li>
+            </ul>
+        </li>
+               <li class="li1"><a href="#"><p class="langua">Legislation</p></a>
+		    <ul class="nav2">
+                 <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Bills" ><p class="langua">Bills</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Proclamation" ><p class="langua">Proclamation</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Regulation"><p class="langua">Regulation</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Decision Passed"><p class="langua">Decision Passed</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Appointment"><p class="langua">Appointment</p></a></li>
+
+           </ul>
+		</li>
+          
+ <li class="li1"><a href="#"> <p class="langua">Archive</p></a>
+            <ul class="nav2">
+                <li><a href="/HPR/faces/c/archive.jsp?type=message" class="underline"><p class="langua">Message</p></a></li>
+                <li><a href="/HPR/faces/c/archive.jsp?type=video" class="underline"><p class="langua">Video</p></a></li>
+
+            </ul>
+        </li>
+  
+        <li class="li1"><a href="#"><p class="langua">HPR</p></a>
+		<ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=aboutus" ><p class="langua">About Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=contactus"><p class="langua">Contact Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/history.jsp"><p class="langua">History</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/feedback.jsp"><p class="langua">Feedback</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/powerfunction.jsp"><p class="langua">Powers and Functions</p></a></li>
+
+            </ul>
+		</li>
+         <li class="li1"><a href="#"><p class="langua">News</p></a>
+		    <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/news.jsp?category=House Speaker" ><p class="langua">Speaker</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Speeches"><p class="langua">Speech</p></a></li>
+
+
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Regular Session"><p class="langua">Regular Session</p></a></li>
+            
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">The Whips</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">Public Opinion Forum</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=visit"><p class="langua">Visit</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=standing committee"><p class="langua">Standing Committe</p></a></li>
+
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=workshop"><p class="langua">Workshop/Training</p></a></li>
+                 
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=parties"><p class="langua">Political Parties</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=archives"><p class="langua">Archives</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Media monitoring "><p class="langua">Media monitoring</p></a></li>
+
+            </ul>
+		</li>
+        <li class="li1"><a href="#"><p class="langua">Committees</p></a>
+
+        <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/businessadvisory.jsp" >Bussiness Advisory Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/coordinating.jsp">Coordinating Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/standing.jsp">Standing Committees</a></li>
+               
+            </ul>
+		</li>
+	
+    </ul>
+
+</div>
+
+<div class="content">
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <link rel="stylesheet" type="text/css" href="/HPR/c/engine/css/slideshow.css" media="screen" />
+    <style type="text/css">.slideshow a#vlb{display:none}</style>
+    <script type="text/javascript" src="/HPR/c/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="/HPR/c/engine/js/visualslideshow.js"></script>
+    <!-- Start VisualSlideShow.com BODY section -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <body>
+        <div class="left">
+
+
+              <div id="show" class="slideshow">
+                        <div class="slideshow-images">
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0793.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/flag.jpeg" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0798.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/parl.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/afe&parelama 02.jpg" alt="parlama" /></a>
+
+
+
+                            
+                     </div>
+
+                    </div>
+            <div style="padding-top:55px;padding-left:20px;">
+                <p style="font-size:24px;padding-left:42px" class="langua">News</p>
+
+              <img src="/HPR/images/hr.png;" width="270px" height="5px">
+                <br><br>
+                <ul>
+
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=546" style="color:black;"> <p>Honorable Speaker,Ato Abadula Gemeda Expresses 'Democracy is not a Choice for Ethiopia rather a Foundation for Sustaining its Development and Bound Together Nation and Nationalities in Peaceful Co-existence.'</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=542" style="color:black;"> <p>Honorable Speaker Mr. Aba Dula Gemeda together with other parliamentarians welcomed a South Korean Delegate led by Honorable Speaker Mr. kang Chang-hee at Bole International Airport.</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=536" style="color:black;"> <p>         154.9 Billion Birr Approved for the Year 2006 E.C Budget </p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=535" style="color:black;"> <p>House Approves the Appointment of Ten Higher Government Officials</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<div class="cmiddle">
+    <div style="width:250px;padding-top:10px;float:left;">
+        <p style="padding-left:20px;padding-bottom:20px;">Search By Year</p>
+ 
+         <form name="adopted" style="padding-left:20px;">
+        
+              
+              <input type="hidden" id="cat" value="null">
+			     <input type="hidden" id="lan" value="English">
+			  
+                  <select  id="yy" style="width:140px;">
+              
+
+          
+</select>
+         </form>
+   
+
+
+</div>
+<div style="width:250px;padding-top:10px;margin-left:15px;float:left;">
+    <p style="padding-left:40px;padding-bottom:20px;">Search By Title</p>
+  
+         <form name="adoptedt" style="padding-left:40px;">
+               
+              <input type="hidden" id="cat" value="null">
+			  
+          <select  id="ty" style="width:140px;">
+              
+
+          
+</select>
+         </form>
+   
+
+</div>
+<div style="width:240px;padding-top:10px;margin-left:530px;">
+    <p style="padding-left:50px;padding-bottom:20px;">Search By Bill No</p>
+ 
+         <form name="adoptedt" style="padding-left:40px;">
+                    
+              <input type="hidden" id="cat" value="null">
+          <select  id="billno" style="width:140px;">
+              
+
+          
+</select>
+         </form>
+      
+
+</div>
+<div>
+    <span id="time"></span>
+
+</div>
+<p style="clear:both;">&nbsp;</p>
+
+ </div>
+
+<p style="clear:both;">&nbsp;</p>
+
+</div>
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+      <div class="bottom">
+<p style="color:white;padding-left:470px;font-size:18px;padding-top:10px;">Copyright © 2011  </p>
+<p style="color:white;padding-left:320px;font-size:17px;">The FDRE;House of People s' Representatives. All Rights Reserved!  </p>
+  </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+</div>
+    </body>
+</html>
+

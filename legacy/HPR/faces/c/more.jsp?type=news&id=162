@@ -1,0 +1,355 @@
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>HPR</title>
+<link href="/HPR/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/logo2.gif" type="image/x-icon">
+
+
+    </head>
+    <body>
+
+        <div class="wrapper">
+                  
+
+ 
+
+
+
+
+
+
+
+        
+       
+        
+   
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+            
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+
+ <div class="header">
+     
+ <img src="/HPR/images/hprbanner.jpg" width="1090px"  height="136px" alt="banner"/>
+
+           
+</div>
+            
+             
+     
+    </body>
+</html>
+
+<div class="menubar"> <!--start of menubar-->
+
+    <ul id="nav">
+        <li class="li1"><a href="/HPR/faces/welcomeJSF.jsp"><p class="langua">Home</p></a></li>
+    
+
+   
+                 
+
+                <li class="li1"><a href="/HPR/faces/photogallery/gallerycategory.jsp"><p class="langua">Gallery</p></a></li>
+
+              <li class="li1 long2"><a href="#"><p class="langua">Secretariat</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=bid" ><p class="langua">Bid</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=vacancy"><p class="langua">Vacancy</p></a></li>
+
+            </ul>
+        </li>
+            <li class="li1 long2"><a href="#"><p class="langua">Publication</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Press Release" ><p class="langua">Press Release</p></a></li>
+                                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Magazine" ><p class="langua">Magazine</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Brochure" ><p class="langua">Brochure </p></a></li>
+            </ul>
+        </li>
+               <li class="li1"><a href="#"><p class="langua">Legislation</p></a>
+		    <ul class="nav2">
+                 <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Bills" ><p class="langua">Bills</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Proclamation" ><p class="langua">Proclamation</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Regulation"><p class="langua">Regulation</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Decision Passed"><p class="langua">Decision Passed</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Appointment"><p class="langua">Appointment</p></a></li>
+
+           </ul>
+		</li>
+          
+ <li class="li1"><a href="#"> <p class="langua">Archive</p></a>
+            <ul class="nav2">
+                <li><a href="/HPR/faces/c/archive.jsp?type=message" class="underline"><p class="langua">Message</p></a></li>
+                <li><a href="/HPR/faces/c/archive.jsp?type=video" class="underline"><p class="langua">Video</p></a></li>
+
+            </ul>
+        </li>
+  
+        <li class="li1"><a href="#"><p class="langua">HPR</p></a>
+		<ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=aboutus" ><p class="langua">About Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=contactus"><p class="langua">Contact Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/history.jsp"><p class="langua">History</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/feedback.jsp"><p class="langua">Feedback</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/powerfunction.jsp"><p class="langua">Powers and Functions</p></a></li>
+
+            </ul>
+		</li>
+         <li class="li1"><a href="#"><p class="langua">News</p></a>
+		    <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/news.jsp?category=House Speaker" ><p class="langua">Speaker</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Speeches"><p class="langua">Speech</p></a></li>
+
+
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Regular Session"><p class="langua">Regular Session</p></a></li>
+            
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">The Whips</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">Public Opinion Forum</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=visit"><p class="langua">Visit</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=standing committee"><p class="langua">Standing Committe</p></a></li>
+
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=workshop"><p class="langua">Workshop/Training</p></a></li>
+                 
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=parties"><p class="langua">Political Parties</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=archives"><p class="langua">Archives</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Media monitoring "><p class="langua">Media monitoring</p></a></li>
+
+            </ul>
+		</li>
+        <li class="li1"><a href="#"><p class="langua">Committees</p></a>
+
+        <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/businessadvisory.jsp" >Bussiness Advisory Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/coordinating.jsp">Coordinating Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/standing.jsp">Standing Committees</a></li>
+               
+            </ul>
+		</li>
+	
+    </ul>
+
+</div>
+
+
+
+<div class="content">
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <link rel="stylesheet" type="text/css" href="/HPR/c/engine/css/slideshow.css" media="screen" />
+    <style type="text/css">.slideshow a#vlb{display:none}</style>
+    <script type="text/javascript" src="/HPR/c/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="/HPR/c/engine/js/visualslideshow.js"></script>
+    <!-- Start VisualSlideShow.com BODY section -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <body>
+        <div class="left">
+
+
+              <div id="show" class="slideshow">
+                        <div class="slideshow-images">
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0793.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/flag.jpeg" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0798.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/parl.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/afe&parelama 02.jpg" alt="parlama" /></a>
+
+
+
+                            
+                     </div>
+
+                    </div>
+            <div style="padding-top:55px;padding-left:20px;">
+                <p style="font-size:24px;padding-left:42px" class="langua">News</p>
+
+              <img src="/HPR/images/hr.png;" width="270px" height="5px">
+                <br><br>
+                <ul>
+
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=162" style="color:black;"> <p>The House heard Prime Minister's  6th month report </p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=57" style="color:black;"> <p>Science, Communication and Technology Committee Examines plan</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=54" style="color:black;"> <p> Committee Examines Plan of the Ministry</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=53" style="color:black;"> <p>Committee Evaluates Work Plan</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<div class="cmiddle">
+
+         
+
+                     <img src="/HPR/newsimage/IMG_7155.jpg" style="width:220px;height:180px;float:left;padding-right:10px;" />
+
+                      <p class="f" style="padding-right:30px;">Honorable Speaker,
+Honorable members of the House of Peoples' Representatives,
+I hereby briefly present the sixth month performance report of the Government on major issues.
+In the economic sector, the Government has made huge effort to achieve the major goals of ensuring sustainability of rapid economic growth and controlling inflation.
+It is now confirmed at the start of the actual fiscal year that the growth registered in the preceding fiscal year has exceeded the predicted figure. The economy has registered an 11.4% growth; where agriculture has seen a 9% growth, industry and service sectors registering a 15% and 12.5% growth respectively. The economic growth is expected to continue in this budget year with a more than 11% growth. The prediction for the agriculture sector shows an 8.5% growth, while the industry sector is expected to mark a 17.9% and the service sector an 11.5% growth. The path of rapid and sustainable growth that the country has embarked upon is continuing with the desired pace and the number of investors seeking to invest in different sectors and particularly the industry sector is significantly increasing from time to time.   
+The Government has taken several steps in order to control inflation. Accordingly, it was also to bring down prices of wheat, sugar, and oil through buying and distributing these items. Similarly, with the view to control money supply, Government budget deficit was minimized and Government bank loan was stopped. It is to be recalled that the House had decided that out of the total budget, which is 117.8 billion birr, 70 billion birr be collected from tax, 9.2 billion birr from non-tax incomes, 28.1 billion birr from foreign aid and loan, and the rest 10.6 billion from local loan. In this regard, 45.2 billion birr was collected from different sources, and 46.1 billion birr is spent excluding projects run by foreign aid and loan. The budget deficit in six months is, therefore, only 941 million birr. 
+The price of goods has gradually started to go down following measures taken by the Government to curb inflation. Accordingly, the monthly rate of inflation that reached 40.6% in August last year has step by step been reduced from the month of September and has now reached 32% in January. If the trend continues, it is expected that it would reach down to a single digit level. Similarly, 1.347 billion USD could be obtained from exports during the six months, and this shows that the export trade has registered a 21% growth in the mentioned period. 
+In accordance with the plan to dry out the primary sources of rent seeking, various measures have been taken in the areas of land administration, tax collection and competition in the trade system. In relation to land administration, a new lease law is enacted with the view to discourage rent seeking activities of inappropriate holding and selling of public land. What is more, the plan to implement land administration based on the cadastre system in Addis Ababa is in its completion phase. The same will continue to be implemented in regional capitals when completed. Business process reengineering is being undertaken in order to make the tax administration more efficient and one that encourages the activities of investors. Problematic systems and structures are being identified with the participation of investors and, based on this, basic system and structural change would be made in the near future. Meanwhile, tax collection efforts made in the past six months have yielded in the collection of around 35 billion birr and in the 41% growth in performance compared with the last budget year.  A number of wholesalers were made to participate in Addis Ababa and regional cities and the role of consumer associations consolidated so as to ensure competitiveness of the transactions. Likewise, the pros and cons of participation of foreign companies in wholesale trade is being studied, and as soon as the study is concluded, additional measures would be taken as deemed necessary. 
+Honorable Speaker,
+Honorable members of the House,
+Our country's journey of ensuring rapid and sustainable economic growth could be realized only if peace in the region is maintained. And our country together with all IGAD member states is working hard to ensure peace in the region. Following simultaneous requests by the two Sudanese states for Ethiopia to play a peace keeping role in Abyei, a region said to be a potential source of conflict between North and South Sudan if not handled properly, and following the subsequent approval of the requests by the United Nations Security Council, our country has responded positively to the requests. We have sent our peace keeping forces and are able to stabilize the situation in Abyei to the extent that the situation will no longer be a potential source of conflict. 
+And to ensure peace in Somalia and fight the terrorist insurgent Al-shabab, the Government has made every effort along with IGAD member states, the African Union and the United Nations and is able to see them taking a strong unified position. The Government has also made every diplomatic effort towards the need to strengthen the human and material resource base of the African Union Mission in Somalia (AMISOM), and the effort is now bearing fruits. Djibouti, Sera-Leon and Kenya have agreed to send additional troops to join AMISOM. And following the Somali Transitional Federal Government's request and the subsequent approvals by the African Union and the United Nations, our country  is military forces have now cleared successfully the Ethio-Somalia border city of Beledweyene from Al-shabab fighters. Ethiopia during its term of IGAD chairmanship has also served in all its effort and has discharged successfully its responsibility of guiding and coordinating all IGAD member states to act in unity towards supporting Somalia and work in collaboration with the United Nations. The strong diplomatic efforts we have been exercising have a significant share in ensuring and maintaining peace both in the region and inside our country. 
+On the other hand our broad effort along with all IGAD member states to unanimously condemn the Eritrean government's strategy of destabilizing the Horn of Africa Region and our continuous requests for the United Nations to tighten its sanctions on the regime have resulted in a satisfactory result. In fact, the fact that the time coincided with the situation in Libya where a substantial debate and difference among UNSC member states, and most of which decided they would not allow passing sanctions resolutions on any states, had created a favorable environment for Eritrea's broad diplomatic campaign to take advantage of any moves for a tightened sanction.  But IGAD member states took a united stand and determinedly made a unified and broad diplomatic effort not only in New York but also in all members of the Security Council and subsequently were able to convince the international community to pass a more tightened sanction on the regime in Eritrea and condemn its destabilizing strategy in the region.  In the same way, efforts aimed at convincing the recent African Union Summit held in Addis Ababa to issue a statement in support of the new UN additional sanctions resolution on Eritrea have succeeded. 
+Honorable Speaker,
+Honorable members of the House,
+One of the components of the Eritrea's destabilizing strategy in the region particular ly focuses on recruiting, organizing, training and arming different anti-peace forces, and on providing direct and close command and guidance to disrupt the peace and security of our country.  The Government of Ethiopia has put in place three strategies to deal with this destibilizing strategy, and it has succeeded in it. 
+On the first level, the Government continues to expose Eritrea's destabilizing activities on the ground there by bringing the necessary diplomatic and legal conditions to detach the Eritrean regime diplomatically and push the United Nations Security Council and other members of the international community to take corrective measures. The Security Council has subsequently condemned Eritrea's destabilizing role and tightened its sanction on it. The African Union has also supported the UN Security Council's decision and the need for  the resolution's serious implementation. IGAD on the same manner reiterated unanimously called upon the international community to take all the necessary legal actions on the regime in Eritrea, and also rejected Eritrea's request, without making any effort to change its destabilizing policy, to renew its membership status and rejoin IGAD and create havoc from inside.  
+According to international law we will strongly continue to put pressure diplomatically and legally on the Eretria's Government's destabilizing activities throught its messengers as a tool to propagate hostility and terror campaign in Ethiopia.  Alongside with this like any sovereign country, Ethiopia has a right to defend itself. Preparations have been made in order to take proportional and proper measures to defend herself when it is necessary and essential. This second strategy will be implemented in future by evaluating its advantage and necessity.
+At the third level concerted works have been conducted and still on progress in order to minimize the damages of terrorist acts of  Shabia messenger's and to capture them. Shabia's Messenger organizations have been categorized as terrorist organizations by the court based on tangible evidences.  Individuals who were undertaking terrorist activities while hiding under the umbrella of legally recognized parties have also been clearly identified and many efforts have been made to bring them before the court based on tangible evidences. Therefore; many members of terrorist organizations hiding under a safe-haven of legal organizations have been identified and legal measures have been taken against them by the court. Even if the damages that have been done by Shabia and its Messengers are highly minimized, as the early attacks at border areas indicate, the struggle should be strongly continued in the future. The public's commitment and support to the campaign to defend terrorism is really commendable and encouraging. On the other hand some Opposition Parties serving as a safe-haven for terrorists and their protective role to the terrorists is becoming a grave concern.
+Traditionally  in Ethiopia terrorist acts are basically conducted by messengers of Shabia and destructionist Ethiopian Opposition Organizations, but recently for the first time  religious extremist's' establishing of an Al-Qaida cell in Ethiopia and their capture indicates how serious the threat of Terrorism is becoming by the day in Ethiopia. Al-Qaida has the same network in all countries of the Horn of Africa. The recent act has been exposed and controlled for the time being due to strong cooperation on exchanges of intelligence between the regional countries and international community. 
+Generally, even if many ups and downs have challenged the peace and security of our country and region, we have managed to continue with our development. The Government will continue to vigorously endeavor to maintain its peace and development based on its experiences and practices.
+
+I THANK YOU!!!
+</p>
+
+                 <div style="padding-left:300px;padding-top:15px;">
+                 <a name="fb_share" type="button_count" href="http://www.facebook.com/sharer.php">Share</a>
+                 <script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script>
+                </div>
+
+
+               
+
+
+
+                            </div>
+
+<p style="clear:both;">&nbsp;</p>
+
+</div>
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+      <div class="bottom">
+<p style="color:white;padding-left:470px;font-size:18px;padding-top:10px;">Copyright © 2011  </p>
+<p style="color:white;padding-left:320px;font-size:17px;">The FDRE;House of People s' Representatives. All Rights Reserved!  </p>
+  </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+</div>
+    </body>
+</html>
+

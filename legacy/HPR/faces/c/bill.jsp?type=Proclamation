@@ -1,0 +1,3436 @@
+
+
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>HPR</title>
+<link href="/HPR/css/style.css" rel="stylesheet" type="text/css" />
+  <link rel="shortcut icon" href="images/logo2.gif" type="image/x-icon">
+
+  <script language="javascript">
+            function postRequest(strURL){
+                var xmlHttp;
+                if(window.XMLHttpRequest){ // For Mozilla, Safari, ...
+                    var xmlHttp = new XMLHttpRequest();
+                }
+        else if(window.ActiveXObject){ // For Internet Explorer
+            var xmlHttp = new ActiveXObject("Microsoft.XMLHTTP");
+        }
+        xmlHttp.open('post', strURL, true);
+
+
+
+        xmlHttp.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+
+
+        xmlHttp.onreadystatechange = function(){
+            if (xmlHttp.readyState == 4){
+
+
+               document.getElementById("time").innerHTML=xmlHttp.responseText;
+
+
+            }
+        }
+       xmlHttp.send(null);
+    }
+
+function call_login(){
+
+
+
+    var searchvalue=document.getElementById("yy").value;
+     var cat=document.getElementById("cat").value;
+   
+   var searchby="date"
+          
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat;
+
+    postRequest(url);
+}
+
+function call_login1(){
+
+
+
+
+    var searchvalue=document.getElementById("ty").value;
+     var cat=document.getElementById("cat").value;
+    
+   var searchby="title"
+   
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat;
+
+    postRequest(url);
+}
+function call_login2(){
+
+  var searchvalue=document.getElementById("billno").value;
+     var cat=document.getElementById("cat").value;
+
+   var searchby="billno"
+
+
+  var url = "search.jsp?searchvalue=" + searchvalue+"&searchby="+searchby+"&category="+cat;
+
+    postRequest(url);
+}
+
+
+
+        </script>
+    </head>
+    <body>
+
+        <div class="wrapper">
+                  
+
+ 
+
+
+
+
+
+
+
+        
+       
+        
+   
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+
+
+
+
+
+
+
+
+            
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+
+ <div class="header">
+     
+ <img src="/HPR/images/hprbanner.jpg" width="1090px"  height="136px" alt="banner"/>
+
+           
+</div>
+            
+             
+     
+    </body>
+</html>
+
+<div class="menubar"> <!--start of menubar-->
+
+    <ul id="nav">
+        <li class="li1"><a href="/HPR/faces/welcomeJSF.jsp"><p class="langua">Home</p></a></li>
+    
+
+   
+                 
+
+                <li class="li1"><a href="/HPR/faces/photogallery/gallerycategory.jsp"><p class="langua">Gallery</p></a></li>
+
+              <li class="li1 long2"><a href="#"><p class="langua">Secretariat</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=bid" ><p class="langua">Bid</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bidvacancy.jsp?type=vacancy"><p class="langua">Vacancy</p></a></li>
+
+            </ul>
+        </li>
+            <li class="li1 long2"><a href="#"><p class="langua">Publication</p></a>
+
+          <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Press Release" ><p class="langua">Press Release</p></a></li>
+                                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Magazine" ><p class="langua">Magazine</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/publication.jsp?type=Brochure" ><p class="langua">Brochure </p></a></li>
+            </ul>
+        </li>
+               <li class="li1"><a href="#"><p class="langua">Legislation</p></a>
+		    <ul class="nav2">
+                 <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Bills" ><p class="langua">Bills</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Proclamation" ><p class="langua">Proclamation</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/bill.jsp?type=Regulation"><p class="langua">Regulation</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Decision Passed"><p class="langua">Decision Passed</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/legislation.jsp?type=Appointment"><p class="langua">Appointment</p></a></li>
+
+           </ul>
+		</li>
+          
+ <li class="li1"><a href="#"> <p class="langua">Archive</p></a>
+            <ul class="nav2">
+                <li><a href="/HPR/faces/c/archive.jsp?type=message" class="underline"><p class="langua">Message</p></a></li>
+                <li><a href="/HPR/faces/c/archive.jsp?type=video" class="underline"><p class="langua">Video</p></a></li>
+
+            </ul>
+        </li>
+  
+        <li class="li1"><a href="#"><p class="langua">HPR</p></a>
+		<ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=aboutus" ><p class="langua">About Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/contactus.jsp?type=contactus"><p class="langua">Contact Us</p></a></li>
+                <li id="li2"><a href="/HPR/faces/c/history.jsp"><p class="langua">History</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/feedback.jsp"><p class="langua">Feedback</p></a></li>
+               <li class="li1"><a href="/HPR/faces/c/powerfunction.jsp"><p class="langua">Powers and Functions</p></a></li>
+
+            </ul>
+		</li>
+         <li class="li1"><a href="#"><p class="langua">News</p></a>
+		    <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/news.jsp?category=House Speaker" ><p class="langua">Speaker</p></a></li>
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Speeches"><p class="langua">Speech</p></a></li>
+
+
+               <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Regular Session"><p class="langua">Regular Session</p></a></li>
+            
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">The Whips</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Motion"><p class="langua">Public Opinion Forum</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=visit"><p class="langua">Visit</p></a></li>
+         <li id="li2"><a href="/HPR/faces/c/news.jsp?category=standing committee"><p class="langua">Standing Committe</p></a></li>
+
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=workshop"><p class="langua">Workshop/Training</p></a></li>
+                 
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=parties"><p class="langua">Political Parties</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=archives"><p class="langua">Archives</p></a></li>
+                 <li id="li2"><a href="/HPR/faces/c/news.jsp?category=Media monitoring "><p class="langua">Media monitoring</p></a></li>
+
+            </ul>
+		</li>
+        <li class="li1"><a href="#"><p class="langua">Committees</p></a>
+
+        <ul class="nav2">
+                <li id="li2"><a href="/HPR/faces/c/businessadvisory.jsp" >Bussiness Advisory Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/coordinating.jsp">Coordinating Committee</a></li>
+                <li id="li2"><a href="/HPR/faces/c/standing.jsp">Standing Committees</a></li>
+               
+            </ul>
+		</li>
+	
+    </ul>
+
+</div>
+
+<div class="content">
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    <link rel="stylesheet" type="text/css" href="/HPR/c/engine/css/slideshow.css" media="screen" />
+    <style type="text/css">.slideshow a#vlb{display:none}</style>
+    <script type="text/javascript" src="/HPR/c/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="/HPR/c/engine/js/visualslideshow.js"></script>
+    <!-- Start VisualSlideShow.com BODY section -->
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <body>
+        <div class="left">
+
+
+              <div id="show" class="slideshow">
+                        <div class="slideshow-images">
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0793.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/flag.jpeg" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/DSC_0798.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/parl.JPG" alt="parlama" /></a>
+
+
+
+                            
+
+                            <a href="#"><img  src="/HPR/photogallery/image/afe&parelama 02.jpg" alt="parlama" /></a>
+
+
+
+                            
+                     </div>
+
+                    </div>
+            <div style="padding-top:55px;padding-left:20px;">
+                <p style="font-size:24px;padding-left:42px" class="langua">News</p>
+
+              <img src="/HPR/images/hr.png;" width="270px" height="5px">
+                <br><br>
+                <ul>
+
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=162" style="color:black;"> <p>The House heard Prime Minister's  6th month report </p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=57" style="color:black;"> <p>Science, Communication and Technology Committee Examines plan</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=54" style="color:black;"> <p> Committee Examines Plan of the Ministry</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                    <li> <a href="/HPR/faces/c/more.jsp?type=news&id=53" style="color:black;"> <p>Committee Evaluates Work Plan</p></a></li>
+                    <h6 style="clear:both;"></h6><br>
+
+             
+                    
+
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+    </body>
+</html>
+
+<div class="cmiddle">
+    <div style="width:250px;padding-top:10px;float:left;">
+        <p style="padding-left:20px;padding-bottom:20px;">Search By Year</p>
+ 
+         <form name="adopted" style="padding-left:20px;">
+        
+              
+              <input type="hidden" id="cat" value="Proclamation">
+                  <select  id="yy" style="width:140px;">
+              
+                        <option value="2002" onclick="call_login()">2002</option>
+
+
+
+               
+                        <option value="2003" onclick="call_login()">2003</option>
+
+
+
+               
+                        <option value="2004" onclick="call_login()">2004</option>
+
+
+
+               
+                        <option value="2005" onclick="call_login()">2005</option>
+
+
+
+               
+                        <option value="2006" onclick="call_login()">2006</option>
+
+
+
+               
+                        <option value="2007" onclick="call_login()">2007</option>
+
+
+
+               
+                        <option value="2008" onclick="call_login()">2008</option>
+
+
+
+               
+                        <option value="2009" onclick="call_login()">2009</option>
+
+
+
+               
+                        <option value="2010" onclick="call_login()">2010</option>
+
+
+
+               
+                        <option value="2011" onclick="call_login()">2011</option>
+
+
+
+               
+                        <option value="2012" onclick="call_login()">2012</option>
+
+
+
+               
+
+          
+</select>
+         </form>
+   
+
+
+</div>
+<div style="width:250px;padding-top:10px;margin-left:15px;float:left;">
+    <p style="padding-left:40px;padding-bottom:20px;">Search By Title</p>
+  
+         <form name="adoptedt" style="padding-left:40px;">
+               
+              <input type="hidden" id="cat" value="Proclamation">
+          <select  id="ty" style="width:140px;">
+              
+                        <option value="971" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON SCIENTIFIC AND TECHNOLOGICAL COOPERATION BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF KOREA</option>
+
+
+
+               
+                        <option value="970" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON SCIENTIFIC AND TECHNOLOGICAL COOPERATION BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE PEOPLE?S REPUBLIC OF CHINA</option>
+
+
+
+               
+                        <option value="969" onclick="call_login1()">A PROCLAMATION TO RATIFY THE REVISED AFRICAN MARITIME TRANSPORT CHARTER</option>
+
+
+
+               
+                        <option value="968" onclick="call_login1()">A PROCLAMATION TO RATIFY THE UNITED NATIONS CONVENTION ON THE LAW OF THE SEA</option>
+
+
+
+               
+                        <option value="967" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL   DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="966" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN   AGREEMENT BETWEEN THE FEDERAL   DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN  DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="965" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN   AGREEMENT BETWEEN THE FEDERAL   DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN  DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="963" onclick="call_login1()">FEDERAL GOVERNMENT SUPPLEMENTARY BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="951" onclick="call_login1()">Protocol to Prevent, Suppress and Punish Trafficking in Persons Especially Women and Children Ratification Proclamation</option>
+
+
+
+               
+                        <option value="950" onclick="call_login1()">Protocol Against the Smuggling of Migrants by Land, Sea and Air Ratification Proclamation</option>
+
+
+
+               
+                        <option value="949" onclick="call_login1()">Protocol Against the Illicit Manufacturing of and Trafficking in Firearms, their Parts and Components and Ammunition Ratification Proclamation</option>
+
+
+
+               
+                        <option value="948" onclick="call_login1()">International Convention for the Suppression of the Financing of Terrorism Ratification Proclamation</option>
+
+
+
+               
+                        <option value="947" onclick="call_login1()">IGAD Convention on Extradition Ratification Proclamation</option>
+
+
+
+               
+                        <option value="946" onclick="call_login1()">IGAD Convention on Mutual Legal Assistance in Criminal Matters Ratification Proclamation</option>
+
+
+
+               
+                        <option value="945" onclick="call_login1()">Commercial Registration and Business Licensing /Amendment/ Proclamation</option>
+
+
+
+               
+                        <option value="944" onclick="call_login1()">Excise Tax Proclamation</option>
+
+
+
+               
+                        <option value="943" onclick="call_login1()">Turnover Tax</option>
+
+
+
+               
+                        <option value="942" onclick="call_login1()">OPEC Fund for International Development Loan Agreement for Financing the Gore-Gambella Road Project Ratification Proclamation</option>
+
+
+
+               
+                        <option value="941" onclick="call_login1()">OPEC Fund for International Development Loan Agreement for financing the Metu-Gore Road Project</option>
+
+
+
+               
+                        <option value="940" onclick="call_login1()">THE ADDIS ABABA CITY GOVERNMENT REVISED CHARTER PROCLAMATION</option>
+
+
+
+               
+                        <option value="939" onclick="call_login1()">Ethio-Belgium General Development Cooperation Agreement Ratification</option>
+
+
+
+               
+                        <option value="938" onclick="call_login1()">Federal Police Commission</option>
+
+
+
+               
+                        <option value="937" onclick="call_login1()">International Development Association Credit Agreement for Financing Energy Access Project Ratification Proclamation</option>
+
+
+
+               
+                        <option value="936" onclick="call_login1()">FISHERIES DEVELOPMENT AND UTILIZATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="935" onclick="call_login1()">International Coffee Agreement 2001 Ratification</option>
+
+
+
+               
+                        <option value="934" onclick="call_login1()">Ethio-Sudan Preferential Trade Agreement Ratification Proclamation</option>
+
+
+
+               
+                        <option value="933" onclick="call_login1()">Ethio-Sudan Preferential Trade Agreement Ratification Proclamation</option>
+
+
+
+               
+                        <option value="932" onclick="call_login1()">Erhio-Korean Trade Agreement Ratification Proclamation</option>
+
+
+
+               
+                        <option value="931" onclick="call_login1()">Ethiopian Intellectual Property Office Establishement Proclamation</option>
+
+
+
+               
+                        <option value="930" onclick="call_login1()">A Proclamation to Amend the Federal Courts Proclamation</option>
+
+
+
+               
+                        <option value="929" onclick="call_login1()">Federal High Court Establishment</option>
+
+
+
+               
+                        <option value="928" onclick="call_login1()">The Treaty on the Reciprocal Promotion and Protection of Investment with the Republic of Turkey Ratification Pr{}clamation.</option>
+
+
+
+               
+                        <option value="927" onclick="call_login1()">A Proclamation to Ratify the Investment Incentive Agreement between the Government of the Federal Democratic Republic of Ethiopia and the Government of the United States of America</option>
+
+
+
+               
+                        <option value="926" onclick="call_login1()">Ratification of the Agreement between the Government of the Federal Democratic Republic of Ethiopia and the Government of the Republic of Turkey on Cooperation in the Field of Health</option>
+
+
+
+               
+                        <option value="925" onclick="call_login1()">Ratification of the Agreement between the Government of the Federal Democratic Republic of Ethiopia and the Government of the Hellenic Republic on Cooperation in the Field of Tourism</option>
+
+
+
+               
+                        <option value="924" onclick="call_login1()">Establishment of the National Reserve Force</option>
+
+
+
+               
+                        <option value="923" onclick="call_login1()">A PROCLAMATION TO AMEND THE COMMERCIAL REGISTRATION AND BUSINESS LICENSING PROLAMATION</option>
+
+
+
+               
+                        <option value="922" onclick="call_login1()">TRADE PRACTICE PROCLAMATION</option>
+
+
+
+               
+                        <option value="921" onclick="call_login1()">TRADE PRACTICE PROCLAMATION</option>
+
+
+
+               
+                        <option value="920" onclick="call_login1()">Implementation of the Convention on the Prohibition of Chemical Weapons</option>
+
+
+
+               
+                        <option value="919" onclick="call_login1()">Ratification of the Protocol to the Treaty Establishing the African Economic Community Relating to the Pan-African Parliament Proclamation</option>
+
+
+
+               
+                        <option value="918" onclick="call_login1()">Ratification of the Protocol Relating to the Establishment of the Peace and Security Council of the African</option>
+
+
+
+               
+                        <option value="917" onclick="call_login1()">PROCLAMATION TO PROVIDE FOR THE AUTHENTICATION AND REGISTRATION OFDOCUMENTS</option>
+
+
+
+               
+                        <option value="916" onclick="call_login1()">Convention Concerning Prohibition and immediate Action for the Elimination of the Worst Forms of child Labour Ratification</option>
+
+
+
+               
+                        <option value="915" onclick="call_login1()">Convention on forced or Compulsory Labour</option>
+
+
+
+               
+                        <option value="873" onclick="call_login1()">Privatization and Public Enterprises Supervising Agency Establishment /Amendment/ Proclamation.</option>
+
+
+
+               
+                        <option value="872" onclick="call_login1()">Sport Facilities Administration Proclamation</option>
+
+
+
+               
+                        <option value="793" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR VETERINARY DRUG AND FEED ADMINISTRATION AND CONTROL</option>
+
+
+
+               
+                        <option value="792" onclick="call_login1()">A PROCLAMATION TO RATIFY THE STATUTE  OF THE INTERNATIONAL RENEWABLE  ENERGY AGENCY</option>
+
+
+
+               
+                        <option value="791" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="790" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="789" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONCESSIONAL LOAN AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EXPORT-IMPORT BANK OF CHINA</option>
+
+
+
+               
+                        <option value="788" onclick="call_login1()">A PROCLAMATION TO AMEND THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS  OF THE  FEDERAL  DEMOCRATIC REPUBLIC OF ETHIOPIA PROCLAMATION</option>
+
+
+
+               
+                        <option value="787" onclick="call_login1()">A PROCLAMATION TO RATIFY THE INSTRUMENTS AMENDING THE CONSTITUTION AND CONVENTION OF THE INTERNATIONAL TELECOMMUNICATION UNION</option>
+
+
+
+               
+                        <option value="786" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR  LEASE HOLDING OF URBAN LANDS</option>
+
+
+
+               
+                        <option value="785" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE ETHIOPIAN  FEDERAL POLICE COMMISSION</option>
+
+
+
+               
+                        <option value="784" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AIR TRANSPORT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETillOPIA AND THE SWISS FEDERAL COUNCIL</option>
+
+
+
+               
+                        <option value="783" onclick="call_login1()">A PROCLAMATION TO RATIFY THE , AGREEMENT AMENDING THE DEVELOPMENT CREDIT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OFETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="781" onclick="call_login1()">A PROCLAMATION FOR THE RATIFICATION OF COOPERATION AGREEMENT BETWEEN THEGOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETillOPIA AND THE GOVERNMENT OF THE REPUBLIC OF TURKEY</option>
+
+
+
+               
+                        <option value="780" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETIllOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="779" onclick="call_login1()">CHAMBERS OF COMMERCE AND SECTORIAL ASSOCIATION ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="778" onclick="call_login1()">CHAMBERS OF COMMERCE AND SECTORIAL ASSOCIATION ESTABLISHMENT ,', PROCLAMATION</option>
+
+
+
+               
+                        <option value="777" onclick="call_login1()">A PROCLAMATION TO AMEND FUEL PRICE STABILIZATION FUND ESTABLISHEMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="776" onclick="call_login1()">A PROCLAMATION TO AMEND DEFENSE., FoIfcES PROCtAMA TION</option>
+
+
+
+               
+                        <option value="775" onclick="call_login1()">FEDERAL GOVERNMENT SUPPLEMENTARY BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="774" onclick="call_login1()">PUBLIC SERVANTS' PENSIONS PROCLAMATION</option>
+
+
+
+               
+                        <option value="773" onclick="call_login1()">A PROCLAMATION TO RATIFY THE TRADE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETIDOPIA AND THE GOVERNMENT OF THE REPUBLIC OF CUBA</option>
+
+
+
+               
+                        <option value="772" onclick="call_login1()">~ PROCALAMATION TO RATIFY THE TRADE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE ISLAMIC REPUBLIC OF IRAN</option>
+
+
+
+               
+                        <option value="771" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR RATIFICATION OF THE CONVENTION FOR THE PACIFIC SETTLEMENT OF INTERNATIONAL DISPUTES</option>
+
+
+
+               
+                        <option value="770" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION ON STANDARDS OF TRAINING, CERTIFICATION AND WATCHKEEPING FOR SEAFARERS, 1978, AS AMENDED IN 1995 (STCW CONVENTION)</option>
+
+
+
+               
+                        <option value="769" onclick="call_login1()">A PROCLAMATION TO RATIFY THE ETHIO-SAUDI ARABIA GENERAL COOPERATION AGREEMENT</option>
+
+
+
+               
+                        <option value="768" onclick="call_login1()">IDGHER EDUCATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="767" onclick="call_login1()">A PROCLAMATION TO RATIFY THE PROTOCOL AGEREEMENT ON PORT SUDAN UTILIZATION</option>
+
+
+
+               
+                        <option value="766" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AMENDMENT TO THE PROTOCOL AGREEMENT ON PORT SUDAN UTILIZATION</option>
+
+
+
+               
+                        <option value="765" onclick="call_login1()">Immigration Proclamation</option>
+
+
+
+               
+                        <option value="764" onclick="call_login1()">A PROCLAMATION TO PRIVIDE THE RATIFICATION OF BAMAKO CONVENTION</option>
+
+
+
+               
+                        <option value="763" onclick="call_login1()">A PROCLAMA TION TO RA TIFY THE BASEL CONVENTION AMENDMENT</option>
+
+
+
+               
+                        <option value="762" onclick="call_login1()">A PROCLAMATION TO RATIFY THE BASEL PROCTOCOL</option>
+
+
+
+               
+                        <option value="761" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="760" onclick="call_login1()">SYSTEM FOR THE INTER VENTION OF THE FEDERAL GOVERNMENT IN THE REGIONS</option>
+
+
+
+               
+                        <option value="759" onclick="call_login1()">A PROCLAMATION TO PROVIDE THE ESTABLI,SHJ1ENT OFETHIOPIAN INFORMATION AND COMMUNICATION TECHNOLOGY DEVELOPMENT AUTHORITY</option>
+
+
+
+               
+                        <option value="758" onclick="call_login1()">THE ADDIS ABABA CITY GOVERNMENT REVISED CHARTER PROCLAMATION</option>
+
+
+
+               
+                        <option value="757" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CARTAGENA PROTOCOL ON BIOSAFETY TO THE CONVENTION ON BIOLOGICAL DIVERSITY</option>
+
+
+
+               
+                        <option value="756" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCE CONTRACT BETWEEN THE FEDERAL pEMOCRA TIC REPUBLIC OF ETHIOPIA AND THE EUROPEAN INVESTMENT BANK</option>
+
+
+
+               
+                        <option value="755" onclick="call_login1()">A PROCLAMATION TO PROVIDED FOR THE ESTABLISHMENT OF JUSTICE ORGANS PROFESSIONALS TRAINING CENTER</option>
+
+
+
+               
+                        <option value="754" onclick="call_login1()">A PROCLAMAION TO PROVIDE FOR THE EST ABLISHlvfENT OF FEDERAL PRISONS COMMISSION</option>
+
+
+
+               
+                        <option value="753" onclick="call_login1()">A PROCLAMA TION TO RA TIFY THE AGREEMENT ESTABLISHING THE INTER-GOVERNMENTAL AUTHORITY ON DEVELOPMENT</option>
+
+
+
+               
+                        <option value="752" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE RE-STABLISHMENT OF THE FEDEREAL INLAND REVENUE AUTHORITY</option>
+
+
+
+               
+                        <option value="751" onclick="call_login1()">A PROCLAMATION TO AMEND THE RE-EST ABLISHMENT AND MODERNIZA nON OF CUSTOMS AUTHORITY</option>
+
+
+
+               
+                        <option value="750" onclick="call_login1()">A PROCLAMATION TO RATIFY THE DEBT RELIEF AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE OPECFUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="749" onclick="call_login1()">CONDOMINIUM PROCLAMATION</option>
+
+
+
+               
+                        <option value="748" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION ON INTERNA TIONAL INTERESTS IN MOBILE EQUIPMENT AND THE PROTOCOL TO THE CONVENTION ON MATTERS SPECIFIC TO AIRCRAFT EQUIPMENT</option>
+
+
+
+               
+                        <option value="747" onclick="call_login1()">PROCLAMATION TO PROVIDE FOR A WAREHOUSE RECEIPTS SYSTEM</option>
+
+
+
+               
+                        <option value="700" onclick="call_login1()">PROCLAMATION TO ACCEDE THE CONVENTION FOR THE PROTECTION OF CULTURAL PROPERTY IN THE EVENT OFARMED CONFLICT AND ITS FIRST PROTOCOL</option>
+
+
+
+               
+                        <option value="698" onclick="call_login1()">A PROCLAMA TION TORA TIFY THE CONVENTION ON THE MEANS OFPROHIBITING AND PREVENTING THE ILL-IClT IMPORT, EXPORT AND TRANSFER OF OWNERSHIP OF CULTURAL PROPERTY</option>
+
+
+
+               
+                        <option value="697" onclick="call_login1()">A PROCLAMA TION TO AMEND THE INVESTliJENT RE-ENACTMENT PROCLAMATION NO. 280/2002</option>
+
+
+
+               
+                        <option value="696" onclick="call_login1()">A PROCLAMATION TO A!vfENDTHE COMMERCIAL REGISTRATION AND BUSINESS LICENSING PROCLAMATION</option>
+
+
+
+               
+                        <option value="695" onclick="call_login1()">LABOUR PROCLAMATION</option>
+
+
+
+               
+                        <option value="694" onclick="call_login1()">A PROCLAMATION ON ETHIOPIAN NATIONALITY</option>
+
+
+
+               
+                        <option value="693" onclick="call_login1()">A PROCLAMA TIONFOR THE RATIFICATION OF THE AMENDMENT TO ARTICLE VI OF THE STATUTE OF THE INTERNATIONAL ATOMIC ENERGY AGENCY.</option>
+
+
+
+               
+                        <option value="692" onclick="call_login1()">A PROCLAMATION TO AMEND THE REORGANIZATION OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETIDOPIA PROCLAMATION</option>
+
+
+
+               
+                        <option value="691" onclick="call_login1()">A PROCLAMATION TO AMEND THE INSTITUTE OF BIODIVERSITY CONSERVATION AND RSEARCH ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="690" onclick="call_login1()">A PROCLAMATION TO AMEND THE ETHIOPIA AGRICULTURAL RSEARCH ORGANIZATION ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="689" onclick="call_login1()">A PROCLAMATION TO AMEND THE DISASTER PREVENTION AND PREPAREDNESS COMMISSION ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="688" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR CONTROLLING VAGRANCY</option>
+
+
+
+               
+                        <option value="687" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="686" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="685" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRA TIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL FUND FOR AGRICULTURAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="684" onclick="call_login1()">A Proclamation to Ratify the Treaty on Encouragement and Reciprocal Protection of Investment between the Federal Democratic Republic of Ethiopia and the Kingdom ofthe Netherlands</option>
+
+
+
+               
+                        <option value="683" onclick="call_login1()">A Proclamation to Ratify the Agreement on Promotion and Reciprocal Protection of Investment with the State of Israel</option>
+
+
+
+               
+                        <option value="682" onclick="call_login1()">A Proclamation to Repeal the Agricultural Mechanization Services Corporation Establishment Proclamation</option>
+
+
+
+               
+                        <option value="681" onclick="call_login1()">PROCLAMATION TO PROVIDE FOR THE ORGANIZATION OF A TECHNICAL AND VOCATIONAL EDUCATION AND TRAINING SYSTEM</option>
+
+
+
+               
+                        <option value="680" onclick="call_login1()">A PROCLAMATION TO RATIFY THE BILATERAL AIR SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE REPUBLIC OF YEMEN</option>
+
+
+
+               
+                        <option value="679" onclick="call_login1()">ProclarbatioD to Ratify The Air Transport Services Agreement Between The Federal Democratic Republic of Ethiopia and The Government of The Kingdom of Saudi Arabia</option>
+
+
+
+               
+                        <option value="678" onclick="call_login1()">A PROCLAMATION TO RATIFY THE PROTOCOL RELATING TO THE FUND FOR COOPERATION COMPENSATION AND DEVELOPMENT OF THE COMMON MARKET FOR ESTERN AND SOUTHERN AFRICA</option>
+
+
+
+               
+                        <option value="677" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE PROCEDURE OF GRANTING PARDON</option>
+
+
+
+               
+                        <option value="676" onclick="call_login1()">A PROCLAMATION TO RATIFAY THE PROTOCOL FOR THE INTER PARLIAMENTARY UNION OF IGAD MEMBER STATES</option>
+
+
+
+               
+                        <option value="675" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND AHT GOVERNMENT OF THE PEOPLE'S DEMOCRATIC REPUBLIC OF ALGERIA ON THERECIPROCAL RPOMOTION AND PROTECTION OF INVESTMENTS</option>
+
+
+
+               
+                        <option value="674" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF AN INQUIRY COMMISSION TO INVESTIGATE THE CONFLICT OCCURRED IN GAMBELA REGIONAL STATE ON DECEMBER 13, 2003</option>
+
+
+
+               
+                        <option value="673" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AIR TRANSPORT SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF BURKINAFASO</option>
+
+
+
+               
+                        <option value="672" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND mE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="671" onclick="call_login1()">COPPERA TIVE SOCIETIES (AMENDMENT) PROCLAMATION</option>
+
+
+
+               
+                        <option value="670" onclick="call_login1()">A PROCLAMATION TO RATIICY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF THE SUDAN ON COOPERATION' IN THE FIELD OF CULTURE</option>
+
+
+
+               
+                        <option value="669" onclick="call_login1()">A PROCLAMATION TO RATIFY THE TREATY SIGNED ON THE RECIPROCAL ENCOURAGEMENT AND PROTECTION OF INVESTMENTS WITH RTHE FEDERAL REPUBLIC OF GERMANY</option>
+
+
+
+               
+                        <option value="668" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON THE RECIPROCAL ENCOURAGEMENT AND PROTECTION OF INVESTMENTS WITH THE GOVERNMENT OF THE REPUBLIC FRANCE</option>
+
+
+
+               
+                        <option value="667" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT SIGNED ON THE ENCOURAGEMENT AND RECIPROCAL PROTECTION OF INVESTMENTS WITH THE GREAT SOCIALIST PEOPLE'S LIBYAN ARAB JAMAHIRIYA</option>
+
+
+
+               
+                        <option value="666" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ESTABLISHING THE SANA' FORUM FOR COOPERATION</option>
+
+
+
+               
+                        <option value="665" onclick="call_login1()">A PROCLAMATION TO AMEND THE ADDIS ABABA CITY GOVERNMENT REVISED CHARTER PROCLAMATION</option>
+
+
+
+               
+                        <option value="664" onclick="call_login1()">REFUGEE PROCLAMATION</option>
+
+
+
+               
+                        <option value="663" onclick="call_login1()">A PROCLAMATION TO PROTECT COPYRIGHT AND NEIGHBORING RIGHTS</option>
+
+
+
+               
+                        <option value="662" onclick="call_login1()">A PROCLAMATION TO AMEND THE REORGANIZATION OF THE EXECUTIVE ORGA~:-' OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA PROCLAMATION</option>
+
+
+
+               
+                        <option value="661" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE PRIVATIZATION AND PUBLIC ENTERPRISES SUPERVISING AUTHORITY</option>
+
+
+
+               
+                        <option value="660" onclick="call_login1()">A PROCLAMATION TO AMEND THE QUALITY AND STANDARDS AUTHORITY OF ETHIOPIA ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="659" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE SUGAR INDUSTRY DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="657" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON THE RECIPROCAL PROMOTION AND PROTECTION OJ? iNVESTMENT BETWEEN THE GOVERNMENTS OF , FEDERAL DEMOCA TIC REPUBLIC OF ETHIOPIA AND THE REPUBLIC OF TUNISIA</option>
+
+
+
+               
+                        <option value="656" onclick="call_login1()">A PROCLAMA nON TO RATIFY THE BUDGET FOR AN INQUIRY COMMISSION TO INVES- TIGA TE THE INCIDENCE OCCURRED IN GAMBELLA REGIONAL STATE ON DECEMBER 13, 2003</option>
+
+
+
+               
+                        <option value="655" onclick="call_login1()">1997 THE FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="654" onclick="call_login1()">APROCLAMA TION TO RATIFY THE ETHIOALGERIA TRADE AGREEMENT</option>
+
+
+
+               
+                        <option value="653" onclick="call_login1()">APROCLAMA TION TO RATIFY THE ETHIO-LIBY A TRADE AGREEMENT</option>
+
+
+
+               
+                        <option value="652" onclick="call_login1()">A PROCLAMATION FOR THE RATIFICATION OF THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GREAT SOCIALIST PEOPLES LIBYAN ARAB JAMAHIRIYA ON COOPERATION IN THE FIELD OF CULTURE, YOUTH AND SPORTS</option>
+
+
+
+               
+                        <option value="651" onclick="call_login1()">A Proclamation to ratify the Agreement signed on the Reciprocal Promotion and Protection of Investments with the Islamic Republic of Iran</option>
+
+
+
+               
+                        <option value="650" onclick="call_login1()">A PROCLAMATION TO AMEND THE PUBLIC SERVANTS' PENSION PROCLAMATION</option>
+
+
+
+               
+                        <option value="649" onclick="call_login1()">APROCLAMATIONTO RATIFYmE CREDITAGREEMENT BETWEEN THE FEDERALDEMOCRATICREPUBLICOF EmIOPIA ANDTHE INTERNATIONALDEVELOPMEN ASSOCIATION</option>
+
+
+
+               
+                        <option value="648" onclick="call_login1()">A PROCLAMATION TO AATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="647" onclick="call_login1()">APROCLAMATIONTO RATIFYTHECREDIT AGREEMENT BETWEENTHE FEDERALDEMOCRATICREPUBLICOF ETHIOPIAANDTHE INTERNATIONALDEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="646" onclick="call_login1()">Conventionon tbe Prohibitionoftbe Use,Stockpiling Prod~ction and Transfer of Anti-Personnel Mines and on their Destruction Ratification Proclamation</option>
+
+
+
+               
+                        <option value="645" onclick="call_login1()">A PROCLAMATION TO RATIFY THE SUB-REGIONAL NAI.Q,OBI PROTOCOL FOR THE PREVENTION CONTROL AND REDUCTION OF SMALL ARMS AND LIGHT WEAPONS IN THE GREAT LIKES REGION AND THE HORN OF AFRICA</option>
+
+
+
+               
+                        <option value="644" onclick="call_login1()">DETERMINING PROCEDURES OF PUBLIC PROCUREMENT AND ESTABLISHING ITS SUPERVISORY AGENCY PROCLAMATION OF THE FEDERAL DEMOCRATIC REPUBLIC GOVERNMENT OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="643" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="642" onclick="call_login1()">ETHIOPIA AVIATION SECURITY PROCLAMATION</option>
+
+
+
+               
+                        <option value="641" onclick="call_login1()">A PROCLAMATION TO I{ATIFY TilE FINANCING AGREEMENT BETWEEN TIlE FEDEHAL DEMOCRATIC REPUBLIC OF I-:TIIIOPIA AND TilE INTERNATIONAL DEVELOP~IENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="640" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR RAW HIDE AND SKIN MARKETING SYSTEM</option>
+
+
+
+               
+                        <option value="639" onclick="call_login1()">Federal Democratic Republic of Ethiopia Rural Land AdnJinistration and Use Proclamation</option>
+
+
+
+               
+                        <option value="638" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR TilE EXIJIWI)'UATION OF LAND 1I0LntNGS FOR I>lIBUC IJLJRIJOSES AND IJAYlIENT OF COMIJENSATION</option>
+
+
+
+               
+                        <option value="637" onclick="call_login1()">A PROCLAMATION TO RATIFY THE DEVELOPMENT CREDIT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND HIE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="636" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE FEDERAL URBAN PLANNING INSTITUTE</option>
+
+
+
+               
+                        <option value="635" onclick="call_login1()">APROCLAMA TION TO PROVIDE FOR THE REESTABLISHMENT OF THE CENSUS COMMISSION</option>
+
+
+
+               
+                        <option value="634" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL FUND FOR AGRICURTURAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="633" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIAN AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="632" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="631" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT AGREEMENT BETWEEN THE FEDERAL DEM0CRATIC REPUBLIC OF ETHIOPIA AND THE NORDIC DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="630" onclick="call_login1()">A SUPPLEMENTARY BUDGET PROCLAMATION FOR FEDERAL GOVERNMENT UNDERTAKINGS</option>
+
+
+
+               
+                        <option value="629" onclick="call_login1()">A PROCLAMATION TO RATIFY THE DEVELOPMENT CREDIT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERN ATIONAL' DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="628" onclick="call_login1()">A PROCLAMATION TO ESTABLISH THE CENTRAL STATISTICS AUTHORITY</option>
+
+
+
+               
+                        <option value="627" onclick="call_login1()">A PROCLAMATION TO RATIFY THE DEVELOPMENT FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="626" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE GRANTING OF EXCLlJSIVE AGENCY ON CERTAIN EXPORT TRADE SECTORS FOR A LIMITED PERIOD OF TIME</option>
+
+
+
+               
+                        <option value="625" onclick="call_login1()">A PROCLAMATION TO RATIFY THE KYOTO PROTOCOL ON THE REDUCTION OF GREENHOUSE GAASES</option>
+
+
+
+               
+                        <option value="624" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE AMENDMENT OF THE PROCLAMATION TO MAKE ELECTORAL LAW OF ETHIOPIA CONFORM WITH THE CONSTITUTION OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="623" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCE CONTRACT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EUROPEAN INVESTMENT BANK</option>
+
+
+
+               
+                        <option value="581" onclick="call_login1()">A Proclamation for the ratification of the agreement between the government of the Federal Democratic Republic of Ethiopia and Republic of Sudan on Tourism Cooperation</option>
+
+
+
+               
+                        <option value="579" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="578" onclick="call_login1()">THE REVISED PROCLAMATION TO PROVIDE FOR SPECIAL PROCEDURE AND RULES OF EVIDENCE ON ANTI-CORRUPTION</option>
+
+
+
+               
+                        <option value="577" onclick="call_login1()">The REVISED PROCLAMATION FOR THE EST ABLISHMENT OF THE FEDERAL ETHICS AND ANTI-CORRUPTION COMMISSION</option>
+
+
+
+               
+                        <option value="476" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION AGAINST DOPING IN SPORT</option>
+
+
+
+               
+                        <option value="475" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE DRUG FUND AND THE PHARMACEUTICAL SUPPLY AGENCY</option>
+
+
+
+               
+                        <option value="474" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="473" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE ETHIOPIA COMMODITY EXCHANGE AUTHORITY</option>
+
+
+
+               
+                        <option value="472" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE ETHIOPIA COMMODITY EXCHANGE</option>
+
+
+
+               
+                        <option value="471" onclick="call_login1()">MARITIME SECTOR ADMINISTRATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="470" onclick="call_login1()">MULTIMODAL TRANSPORT OF GOODS PROCLAMATION</option>
+
+
+
+               
+                        <option value="469" onclick="call_login1()">A PROCLAMATION TO AMEND CARRIAGE OF GOODS BY LAND.</option>
+
+
+
+               
+                        <option value="468" onclick="call_login1()">A PROCLAMATION TOAMEND THE PROCLA- MATION PROVIDING THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="467" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE RATIFICATION OF THE AFRICAN UNION CONVENTION ON PREVENTING AND COMBATING CORRUPTION</option>
+
+
+
+               
+                        <option value="466" onclick="call_login1()">A PROCLAMATION TOPROVIDE FOR THE RATIFICATION OF THE UNITED NATIONS CONVENTION AGAINST CORRUPTION</option>
+
+
+
+               
+                        <option value="465" onclick="call_login1()">THE REVISED EXPORT TRADE DUTY INCENTIVE SCHEME ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="464" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DEVELOPMENT CONSERVATION AND UTILIZATION OF FORESTS</option>
+
+
+
+               
+                        <option value="463" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DEVELOPMENT CONSERVATION AND UTILIZATION OF WILDLIFE</option>
+
+
+
+               
+                        <option value="462" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE AGREEMENT ON  CUSTOMS  COOPERATION AND ANTI-SMUGG- LING AND ILLICIT TRAFFICKING BETWEEN THE MEMBER STATES OF THE SANA?A FORUM</option>
+
+
+
+               
+                        <option value="461" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE FINANCING  AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="460" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL  DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="459" onclick="call_login1()">A PROCLAMATION TO RATIFY THE  AGREE- MENT ON THE RECIPROCAL PROMOTION AND PROTECTION OF INVESTMENT WITH THE BELGIAN-LUXEMBOURG  ECONOMIC UNION</option>
+
+
+
+               
+                        <option value="458" onclick="call_login1()">A PROCLAMATION TO AMEND THE DIREDAWA ADMINISTRATION CHARTER (AMENDMENT) PROCLAMATION</option>
+
+
+
+               
+                        <option value="457" onclick="call_login1()">A PROCLAMATION FOR THE RE-ESTABLISHMENT OF THE NATIONAL LOTTERY ADMINISTRATION</option>
+
+
+
+               
+                        <option value="456" onclick="call_login1()">RIVER BASIN COUNCILS AND  AUTHORITIES PROCLAMATION</option>
+
+
+
+               
+                        <option value="455" onclick="call_login1()">A PROCLAMATION ON BROADCASTING SERVICE</option>
+
+
+
+               
+                        <option value="454" onclick="call_login1()">A PROCLAMATION TO AMEND THE ELECTORAL LAW OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="453" onclick="call_login1()">A PROCLAMATION ON SPECIAL  GOVERNMENT BOND</option>
+
+
+
+               
+                        <option value="452" onclick="call_login1()">A   PROCLAMATION   TO   RATIFY   THE   FINANCE CONTRACT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC  OF  ETHIOPIA  AND  THE  EUROPEAN INVESTMENT BANK</option>
+
+
+
+               
+                        <option value="451" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGRE-EMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="450" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE LOAN AGRE- EMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="449" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AIR TRANSPORT SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF EQUATORIAL GUINEA</option>
+
+
+
+               
+                        <option value="448" onclick="call_login1()">A PROCLAMATION TO RATIFY UNITED NATIONS CONVENTION AGAINST TRANSNATIONAL ORGANIZED CRIMES</option>
+
+
+
+               
+                        <option value="447" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR NATIONAL PAYMENT SYSTEM</option>
+
+
+
+               
+                        <option value="446" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENTS BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EXPORT-IMPORT BANK OF CHINA</option>
+
+
+
+               
+                        <option value="445" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR PENSION OF PRIVATE ORGANIZATION EMPLOYEES</option>
+
+
+
+               
+                        <option value="444" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR PUBLIC SERVANTS? PENSION</option>
+
+
+
+               
+                        <option value="443" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CHARTER FOR THE CULTURAL RENAISSANCE OF AFRICA</option>
+
+
+
+               
+                        <option value="442" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="441" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT LINE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EXPORT-IMPORT BANK OF INDIA</option>
+
+
+
+               
+                        <option value="440" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF GABON CONCERNING THE ABOLITION OF VISAS FOR THE HOLDERS OF DIPLOMATIC AND SERVICE PASSPORTS</option>
+
+
+
+               
+                        <option value="439" onclick="call_login1()">A PROCLAMATION TO RATIFY THE TRIPARTITE CONSULTATION (INTERNATIONAL LABOUR STANDARDS) CONVENTION</option>
+
+
+
+               
+                        <option value="438" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DISSOLUTION OF THE ETHIOPIAN WOMEN?S DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="437" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE RATIFICATION OF THE CONSTITUTION AND CONVENTION OF THE AFRICAN TELECOMMUNICATIONS UNION</option>
+
+
+
+               
+                        <option value="436" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="435" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="434" onclick="call_login1()">FEDERAL GOVERNMENT SUPPLEMENTARY BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="433" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AMENDMENTS OF THE ARTICLES OF AGREEMENT OF THE INTERNATIONAL MONETARY FUND</option>
+
+
+
+               
+                        <option value="432" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="431" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="430" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE SAUDI FUND FOR DEVELOPMENT</option>
+
+
+
+               
+                        <option value="426" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVEREMENT OF THE REPUBLIC OF TURKEY FOR THE AVOIDANCE OF DOUBLE TAXATION WITH RESPECT TO TAXES ON INCOME</option>
+
+
+
+               
+                        <option value="425" onclick="call_login1()">A PROCLAMATION TO RATIFY THE BILATRAL AIR TRANSPORT SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF UNITED STATE OF AMERICA</option>
+
+
+
+               
+                        <option value="424" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE ETHIOPIAN  SUGAR DEVELOPMENT AGENCY</option>
+
+
+
+               
+                        <option value="423" onclick="call_login1()">A PROCLAMATION TO REPEAL THE AMENDED PROCLAMATION OF THE HOUSE OF PEOPLES? REPRESENTATIVES WORKING PROCEDURES AND MEMBERS? CODE OF CONDUCT.</option>
+
+
+
+               
+                        <option value="422" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="421" onclick="call_login1()">TRADEMARK REGISTRATION AND PROTECTION  PROCLAMATION</option>
+
+
+
+               
+                        <option value="420" onclick="call_login1()">A PROCLAMATION TO RATIFY THE BILATRAL AIR TRANSPORT SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF FEDERAL DEMOCRATIC REPUBLIC OF NIGERIA</option>
+
+
+
+               
+                        <option value="419" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE GOVERNMENT  OF THE FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE AFRICAN  DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="418" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN  AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA  AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="417" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN  THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE SAUDI FUND FOR DEVELOPMENT</option>
+
+
+
+               
+                        <option value="416" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE RE-ESTABLISHMENT OF THE SOCIAL  SECURITY AGENCY</option>
+
+
+
+               
+                        <option value="415" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE AMENDMENT OF THE LABOUR PROCLAMATION</option>
+
+
+
+               
+                        <option value="414" onclick="call_login1()">PROCLAMATION TO RATIFY THE COMPREHENSIVE NUCLEAR TEST-BAN-TREATY</option>
+
+
+
+               
+                        <option value="413" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE KUWAIT FUND FOR ARAB ECONOMIC DEVELOPMENT</option>
+
+
+
+               
+                        <option value="412" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE GOVERNMENT  OF THE  FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE EXPORT-IMPORT  BANK OF INDIA</option>
+
+
+
+               
+                        <option value="411" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="410" onclick="call_login1()">PROCLAMATION TO RATIFY THE SCIENCE AND TECHNOLOGICAL COOPERATION AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE STATE OF ISRAEL</option>
+
+
+
+               
+                        <option value="409" onclick="call_login1()">A PROCLAMATION TO ESTABLISH THE ETHIOPIAN ORGANIC AGRICULTURE SYSTEM</option>
+
+
+
+               
+                        <option value="408" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EUROPEAN INVESTMENT BANK</option>
+
+
+
+               
+                        <option value="407" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION BETWEEN THE GOVERNMENTS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND ROMANIA  FOR THE   AVOIDANCE OF DOUBLE TAXATION  AND THE PREVENTION OF FISCAL EVASION WITH RESPECT TO TAXES ON  INCOME AND ON CAPITAL</option>
+
+
+
+               
+                        <option value="406" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON SECURITY COOPERATION BETWEEN  THE  FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE REPUBLIC OF YEMEN</option>
+
+
+
+               
+                        <option value="405" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION FOR SAFEGUARDING OF THE INTANTANGIBLE CULTURAL HERITAGE</option>
+
+
+
+               
+                        <option value="404" onclick="call_login1()">PROCLAMATION TO AMEND THE DIREDAWA ADMINISTRATION  CHARTER PROCLAMATION</option>
+
+
+
+               
+                        <option value="403" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR ACCESS TO GENETIC RESOURCES AND COMMUNITY KNOWLEDGE AND COMMUNITY RIGHT</option>
+
+
+
+               
+                        <option value="402" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR PLANT BREEDERS? RIGHT</option>
+
+
+
+               
+                        <option value="401" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE  FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC SOUTH AFRICA FOR THE   AVOIDANCE OF DOUBLE TAXATION  AND THE PREVENTION OF FISCAL EVASION WITH RESPECT TO TAXES ON INCOME</option>
+
+
+
+               
+                        <option value="400" onclick="call_login1()">A proclamation to establish an independent inquiry commission to investigate the disorder occurred on June 8, 2005 in Addis Ababa, between the 1st of November and 10th of November, as well as between the 14th of November and 16th of November 2005 in Addis</option>
+
+
+
+               
+                        <option value="399" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON CULTURAL SCIENTIFIC AND EDUCATIONAL COOPERATION WITH THE ISLAMIC REPUBLIC OF IRAN</option>
+
+
+
+               
+                        <option value="398" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND  THE SAUDI FUND FOR DEVELOPMENT</option>
+
+
+
+               
+                        <option value="397" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLLIC OF ETHIOPIA AND THE AVRICAN  DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="396" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT  AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLLIC OF ETHIOPIA AND THE NORDIC DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="395" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="394" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ITALIAN REPUBLIC</option>
+
+
+
+               
+                        <option value="393" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="392" onclick="call_login1()">A PROCLAMATION TO RATIFY THE ETHIO-NIGERIA BILATERAL TRADE AGREEMENT</option>
+
+
+
+               
+                        <option value="391" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR  THE RATIFICATION OF AMENDMENT TO THE ACP-EU PARTNERSHIP  AGREEMENT SIGNED IN COTONOU</option>
+
+
+
+               
+                        <option value="390" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF ITALIAN ON MUTUALADMINISTRATIVE ASSISTANCE FOR THE PREVENTION, INVESTIGATION AND REPRESSION OF CUSTOMS OFFEN</option>
+
+
+
+               
+                        <option value="389" onclick="call_login1()">A PROCLAMATION TO RATIFY THE DEBT RELIEF AGREEMENT BETWEEN THE FEDERAL DEMOC- RATIC REPUBLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="388" onclick="call_login1()">A PROCLAMATION TO PTOVIDE FOR THE DISSOLUTION OF THE ETHIOPIAN SOCIAL REHABILITAION AND DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="387" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE ETHIO-DJIBOTI MULTI-MODAL TRANSPORT SYSTEM AGREEMENT</option>
+
+
+
+               
+                        <option value="386" onclick="call_login1()">A PROCLAMATION TO AMEND THE ESTABLISHMENT PROCLAMATION OF THE SECRETARIAT OF THE HOUSE OF PEOPLES? REPRESENTATIVES OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="385" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE AGREEMENT ON THE PROMOTION AND PROTECTION OF INVESTMENT WITH  THE GOVERNMENT OF REPUBLIC OF FINLAND</option>
+
+
+
+               
+                        <option value="384" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE AGREEMENT ON THE PROMOTION AND RECIPROCAL  PROTECTION OF INVESTMENT WITH  THE GOVERNMENT OF THE ARAB REPUBLIC OF EGYPT</option>
+
+
+
+               
+                        <option value="383" onclick="call_login1()">A PROCLAMATION TO RATIFY THE ETHIO-DJIBOTI PREFERENTIAL INVESTMENT FACILITATION AND PROPERTY ACQUISITION AGREEMENT</option>
+
+
+
+               
+                        <option value="382" onclick="call_login1()">THE FEDERAL CIVIL SERVANTS  PROCLAMATION</option>
+
+
+
+               
+                        <option value="381" onclick="call_login1()">A PROCLAMATION TO AMEND THE DIREDAWA ADMINISTRATION CHARTER (AMENDMENT) PROCLAMATION</option>
+
+
+
+               
+                        <option value="380" onclick="call_login1()">SOLD WASTE MANAGEMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="379" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="378" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="377" onclick="call_login1()">A PROCLAMATION FOR THE RE-ESTABLISHMENT OF THE NATIONAL LOTTERY ADMINISTRATION</option>
+
+
+
+               
+                        <option value="376" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON CULTURAL,   EDUCATIONAL   AND   SCIENTIFIC COOPERATION WITH THE STATE OF ISRAEL</option>
+
+
+
+               
+                        <option value="375" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL  DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF TUNISIA FOR  THE AVOIDANCE OF DOUBLE TAXATION WITH RESPECT TO TAXES ON INCOME</option>
+
+
+
+               
+                        <option value="374" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE PEOPLES? DEMOCRATIC REPUBLIC OF ALGERIA FOR THE AVOIDANCE OF DOUBLE TAXATION AND THE PREVENTION OF  FISCAL EVASION WITH</option>
+
+
+
+               
+                        <option value="373" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="372" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE STATE OF ISRAEL FOR THE AVOIDANCE   OF   DOUBLE   TAXATION   AND   THE PREVENTION OF FISCAL EVASION WITH RESPECT  TO TAX</option>
+
+
+
+               
+                        <option value="324" onclick="call_login1()">A PROCLAMATION TO ESTABLISH THE AGENCY FOR GOVERNMENT HOUSES</option>
+
+
+
+               
+                        <option value="323" onclick="call_login1()">A Proclamation to provide for the establishment of the Secretariat of the House of Federation of the Federal Democratic Republic of  Ethiopia.</option>
+
+
+
+               
+                        <option value="322" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE   CREDIT AGREEMENT BETWEEN THE GOVERNMENT OF THE   FEDERAL   DEMOCRATIC   REPUBLIC    OF ETHIOPIA AND THE EXPORT IMPORT  BANK OF INDIA</option>
+
+
+
+               
+                        <option value="320" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR VEHICLE INSURANCE AGAINST THIRD PARTY RISKS</option>
+
+
+
+               
+                        <option value="319" onclick="call_login1()">A PROCLAMATION TO RATIFY THE ETHIO-EQUATORIAL GUINEA BILATERAL  TRADE AGREEMENT</option>
+
+
+
+               
+                        <option value="318" onclick="call_login1()">A PROCLAMATION TO RATIFY THE  ETHIO-YEMEN BILATERAL TRADE AGREEMENT</option>
+
+
+
+               
+                        <option value="317" onclick="call_login1()">A PROCLAMATION TO RATIFY THE PROTOCOL ON   TECHINICAL  SCIENTIFIC  AND  ECONOMIC COOPERATION IN THE FIELD OF AGRICULTURE BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF TURKEY</option>
+
+
+
+               
+                        <option value="316" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL FUND FOR AGRICUTURAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="315" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINAN- CING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL  DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="314" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AFRICAN NUCLEAR-WEAPON-FREE ZONE TREATY (PELINDABA TREATY)</option>
+
+
+
+               
+                        <option value="313" onclick="call_login1()">A  PROCLAMATION  TO  AMEND THE ETHIOPIA COMMODITY EXCHANGE AUTHORITY ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="312" onclick="call_login1()">A PROCLAMATION TO LEVY TAX ON EXPORT  OF RAW AND SEMI ? PROCESSED  HIDES AND SKINS</option>
+
+
+
+               
+                        <option value="311" onclick="call_login1()">A  PROCLAMATION TO PROVIDE FOR  THE RIGHT TO EMPLOYMENT OF  PERSONS WITH DISABILITY</option>
+
+
+
+               
+                        <option value="310" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE  FINANC- ING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="309" onclick="call_login1()">EXCISE TAX (AMENDMENT) PROCLAMATION</option>
+
+
+
+               
+                        <option value="308" onclick="call_login1()">RADIATION PROTECTION  PROCLAMATION</option>
+
+
+
+               
+                        <option value="307" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR PERIOD OF LIMITATION FOR SUBMISSION OF RESTITUTION CLAIMS AND FOR THE REPOSSESSION OF PUBLIC PROPERTIES TAKEN THROUGH UNLAWFUL RESTITUTIONS</option>
+
+
+
+               
+                        <option value="306" onclick="call_login1()">POLITICAL PARTIES REGISTRATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="305" onclick="call_login1()">A PROCLAMATION TO PROVIDE  FOR URBAN PLANS</option>
+
+
+
+               
+                        <option value="304" onclick="call_login1()">A  PROCLAMATION  TO  PROVIDE FOR THE ESTABLISHMENT   OF  THE    ETHIOPIAN WILDLIFE DEVELOPMENT AND  CONSERVATION AUTHORITY</option>
+
+
+
+               
+                        <option value="303" onclick="call_login1()">A  PROCLAMATION  TO AMEND THE INTERN- ATIONAL CONVENTION ON THE HARMONIZED COMMODITY DESCRIPTION AND CODING SYSTEM RATIFICATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="302" onclick="call_login1()">A PROCLAMATION TO RATIFY  THE AGREEMENT ON   TOURISM   COOPERATION   BETWEEN   THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA  AND THE REPUBLIC OF TURKEY</option>
+
+
+
+               
+                        <option value="301" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON CULTURE AND TOURISM COOPERATION BETWEEN THE FEDERAL DEMOCRATIC  REPUBLIC OF ETHIOPIA AND FEDERAL REPUBLIC OF  NIGERIA</option>
+
+
+
+               
+                        <option value="300" onclick="call_login1()">A SUPPLEMENTARY BUDGET PROCLAMATION FOR FEDERAL GOVERNMENT UNDERTAKINGS</option>
+
+
+
+               
+                        <option value="299" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE  GENERAL AGREEMENT OF CO-OPERATION BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE KINGDOM OF SPAIN</option>
+
+
+
+               
+                        <option value="298" onclick="call_login1()">A  PROCLAMATION  TO  AMEND THE WATER RESOUR- CES DEVELOPMENT FUND ESTABLISHMENT AND ADMINISTRATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="297" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE  LOAN  AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="296" onclick="call_login1()">A   PROCLAMATION   TO   RATIFY   THE   FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC  REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="295" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT   BETWEEN      THE      FEDERAL    DEMOCRATIC REPUBLIC  OF  ETHIOPIA  AND  THE  FRENCH REPUBLIC  FOR THE AVOIDANCE OF DOUBLE  TAXATION AND THE PREVENTION OF   FISCAL EVASION WITH RESPECT  TO TAXES ON INCOME</option>
+
+
+
+               
+                        <option value="294" onclick="call_login1()">A  PROCLAMATION   TO   RATIFY   THE   AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE CZECH REPUBLIC FOR THE AVOIDANCE OF DOUBLE TAXATION AND THE PREVENTION OF FISCAL EVASION WITH  RESPECT TO TAXES ON INCOME</option>
+
+
+
+               
+                        <option value="293" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF INDIA ON COOPERATION IN THE FIELDS OF  SCIENCE AND TECHNOLOGY</option>
+
+
+
+               
+                        <option value="292" onclick="call_login1()">A  PROCLAMATION  TO  PROVIDE FOR THE ESTABLISHMENT   OF  THE    ETHIOPIAN REVENUES AND CUSTOMS AUTHORITY</option>
+
+
+
+               
+                        <option value="291" onclick="call_login1()">A PROCLAMATION TO DEFINE THE LIABILITY  OF THE DRY PORT TO THE CONSIGNEE</option>
+
+
+
+               
+                        <option value="290" onclick="call_login1()">A PROCLAMATION TO ESTABLISH A REVOLVING FUND FOR ROAD DEVELOPMENT PROJECTS</option>
+
+
+
+               
+                        <option value="289" onclick="call_login1()">A PROCLAMATION TO AMEND THE NATIONAL   BANK OF ETHIOPIA ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="288" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR BANKING BUSINESS</option>
+
+
+
+               
+                        <option value="287" onclick="call_login1()">A PROCLAMATION TO TRANSFER RIGHTS AND OBLIGATIONS OF THE DISASTER PREVENTION AND PREPAREDNESS AGENCY TO THE MINISTRY OF AGRICULTURE AND RURAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="286" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCR- ATIC REPUBLIC OF ETHIOPIA AND THE INTER NATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="285" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCR- ATIC REPUBLIC OF ETHIOPIA AND THE INTER- NATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="284" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN  AGREEMENT BETWEEN THE FEDERAL  DEMOCRATIC REPUBLIC OF ETHIOPIA  AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="283" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING   AGREEMENT BETWEEN THE FEDERAL  DEMOCRATIC REPUBLIC OF ETHIOPIA  AND THE INTERNATIONAL  DEVELOP- MENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="282" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="281" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON THE PROMOTION AND PROTECTION OF INVESTMENT WITH THE GOVERNMENT OF THE REPUBLIC OF INDIA</option>
+
+
+
+               
+                        <option value="280" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR DRIVER?S QUALIFICATION CERTIFICATION LICENSE</option>
+
+
+
+               
+                        <option value="279" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION FOR THE PROTECTION AND PROMOTION OF THE DIVERSITY OF CULTURAL EXPRESSIONS</option>
+
+
+
+               
+                        <option value="278" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR COFFEE QUALITY CONTROL AND MARKETING</option>
+
+
+
+               
+                        <option value="222" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR FREEDOM OF THE MASS MEDIA AND ACCESS TO INFORMATION</option>
+
+
+
+               
+                        <option value="221" onclick="call_login1()">A PROCLAMATION TO AMEND THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA PROCLAMATION</option>
+
+
+
+               
+                        <option value="220" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON YOUTH AND SPORT COOPERATION WITH  THE  REPUPLIC OF YEMEN</option>
+
+
+
+               
+                        <option value="219" onclick="call_login1()">PROCLAMATION TO RATIFY THE CONVENTION FOR THE ESTABLISHMENT OF THE AFRICAN CENTER FOR FERTILIZER DEVELOPMENT</option>
+
+
+
+               
+                        <option value="218" onclick="call_login1()">PROCLAMATION TO RATIFY THE CONVENTION  OF THE AFRICAN  ENERGY COMMISSION</option>
+
+
+
+               
+                        <option value="217" onclick="call_login1()">PROCLAMATION TO RATIFY THE INTER-AFRICAN CONVENTION ESTABLISHING AN AFRICAN  TECHNICAL CO-OPERATION PROGRAMME</option>
+
+
+
+               
+                        <option value="216" onclick="call_login1()">A PROCLAMATION TO AMEND THE  INCOME TAX PROCLAMATION</option>
+
+
+
+               
+                        <option value="215" onclick="call_login1()">A PROCLAMATION TO AMEND THE  VALUE ADDED TAX PROCLAMATION</option>
+
+
+
+               
+                        <option value="214" onclick="call_login1()">A PROCLAMATION TO AMEND THE  EXCISE TAX PROCLAMATION</option>
+
+
+
+               
+                        <option value="213" onclick="call_login1()">A PROCLAMATION TO AMEND THE  TURNOVER TAX PROCLAMATION</option>
+
+
+
+               
+                        <option value="212" onclick="call_login1()">A PROCLAMATION TO AMEND THE  STAMP DUTY PROCLAMATION</option>
+
+
+
+               
+                        <option value="211" onclick="call_login1()">PROCLAMATION TO RATIFY THE AFRICAN CHARTER ON DEMOCRACY, ELECTION AND GOVERNANCE</option>
+
+
+
+               
+                        <option value="210" onclick="call_login1()">PROCLAMATION TO RATIFY THE PROTO- COL TO THE OAU CONVENTION ON THE PREVENTION AND COMBATING OF TERRORISM</option>
+
+
+
+               
+                        <option value="209" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AIR TRANSPORT SERVICES AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE HONG KONG SPECIAL ADMINISTRATIVE REGION OF THE PEOPLE?S  REPUBLIC OF CHINA</option>
+
+
+
+               
+                        <option value="208" onclick="call_login1()">CIVIL AVIATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="207" onclick="call_login1()">PROCLAMATION TO RATIFY THE  AGREEMENT FOR THE ESTABLISHMENT OF THE AFRICAN REHABILITATION INSTITUTE</option>
+
+
+
+               
+                        <option value="206" onclick="call_login1()">PROCLAMATION TO RATIFY THE ADDITIONAL PROTOCOL TO THE OAU GENERAL CONVENTION ON PRIVILEGES AND IMMUNITIES</option>
+
+
+
+               
+                        <option value="205" onclick="call_login1()">PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE GOVERNMENT OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE STATE OF KUWAIT ON THE ESTABLISHMENT OF JOINT MINISTERIAL COMMITTEE FOR COOPERATION</option>
+
+
+
+               
+                        <option value="204" onclick="call_login1()">A PROCLAMATION TO RATIFY THE INTERNATIONAL CONVENTION ON CIVIL LIABILITY FOR BUNKER OIL  POLLUTION DAMAGE</option>
+
+
+
+               
+                        <option value="203" onclick="call_login1()">PROCLAMATION TO PROVIDE  FOR THE REGISTRATION AND  REGULATION OF CHARITIES AND SOCIETIES</option>
+
+
+
+               
+                        <option value="202" onclick="call_login1()">PROCLAMATION NO.  622/2009 CUSTOMS PROCLAMATION</option>
+
+
+
+               
+                        <option value="201" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT   BETWEEN   THE   FEDERAL DEMOCRATIC   REPUBLIC   OF   ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="200" onclick="call_login1()">ETHIOPIAN BUILDING PROCLAMATION</option>
+
+
+
+               
+                        <option value="199" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT   BETWEEN   THE   GOVERNMENT OF THE FEDERAL DEMOCRATIC   REPUBLIC    OF   ETHIOPIA AND THE AFRICAN  DEVELOPMENT  FUND</option>
+
+
+
+               
+                        <option value="198" onclick="call_login1()">MICRO FINANCING BUSINESS PROCLAMATION</option>
+
+
+
+               
+                        <option value="197" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT AGREEMENT BETWEEN THE GOVERNMENT  OF THE FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE EXPORT-IMPORT  BANK OF INDIA</option>
+
+
+
+               
+                        <option value="196" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE  INTERNATIONL CONVENTION  ON THE CONTROL OF  HARMFUL  ANTI-FOULING  SYSTEMS</option>
+
+
+
+               
+                        <option value="195" onclick="call_login1()">A  PROCLAMATION  TO  RATIFY  THE  INTERNATIONL CONVENTION ON LIABILITY AND COMPENSATION FOR DAMAGE   IN  CONNECTION   WITH  THE  CARRIAGE   OF HAZARDOUS AND NOXIOUS  SUBSTANCES BY SEA</option>
+
+
+
+               
+                        <option value="194" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT   BETWEEN   THE    FEDERAL DEMOCRATIC   REPUBLIC   OF   ETHIOPIA  AND THE KUWAIT FUND FOR ARAB  ECONOMIC  DEVELOPMENT</option>
+
+
+
+               
+                        <option value="193" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT   BETWEEN   THE    FEDERAL DEMOCRATIC   REPUBLIC   OF   ETHIOPIA  AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="192" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR EMPLOYMENT EXCHANGE SERVICES</option>
+
+
+
+               
+                        <option value="191" onclick="call_login1()">A PROCLAMATION TO AMEND THE PUBLIC  SERVANTS? PENSIONS PROCLAMATION</option>
+
+
+
+               
+                        <option value="190" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION ON MIGRATORY SPECIES OF WILD ANIMALS</option>
+
+
+
+               
+                        <option value="189" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT   FOR CONSERVATION OF AFRICAN EURASIAN MIGRATORY WATER BIRDS</option>
+
+
+
+               
+                        <option value="188" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT   BETWEEN   THE   GOVERNMENT OF THE FEDERAL DEMOCRATIC   REPUBLIC   OF   ETHIOPIA AND THE GOVERNMENT OF THE REPUBLIC OF INDIA ON THE ESTABLISHMENT OF JOINT MINISTERIAL COMMISSION</option>
+
+
+
+               
+                        <option value="187" onclick="call_login1()">A PROCLAMATION TO RATIFY THE  AGREEMENT   OF COPERATION  WITH THE PORTUGUESE REPUBLIC</option>
+
+
+
+               
+                        <option value="186" onclick="call_login1()">A PROCLAMATION TO RATIFY THE  AGREEMENT   ON EDUCATION CULTURE AND YOUTH COOPERATION WITH THE  KINGDOM OF SPAIN</option>
+
+
+
+               
+                        <option value="185" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE AMENDMENT OF THE CIVIL CODE</option>
+
+
+
+               
+                        <option value="184" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AIR TRANSPORT SERVICES AGREEMENT   BETWEEN   THE   FEDERAL DEMOCRATIC   REPUBLIC    OF   ETHIOPIA AND THE GOVERNMENT  OF THE REPUBLIC OF TUNISIA</option>
+
+
+
+               
+                        <option value="183" onclick="call_login1()">A PROCLAMATION TO AMEND THE PROCLAMATION PROVIDING THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="182" onclick="call_login1()">A PROCLAMATION TO AMEND THE PROCLAMATION PROVIDING THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="181" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT ON THE PROMOTION AND PROTECTION OF INVESTMENT WITH THE GOVERNMENT OF THE REPUBLIC  OF SOUTH AFRICA</option>
+
+
+
+               
+                        <option value="179" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE ARAB BANK FOR ECONOMIC DEVELOPMENT IN AFRICA</option>
+
+
+
+               
+                        <option value="178" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="177" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="176" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE FINACIAL ADMINSTRATION OF THE FEDERAL  GOVERNMENT OF ETHIOPIA</option>
+
+
+
+               
+                        <option value="175" onclick="call_login1()">THE ETHIOPIAN FEDERAL GOVERNMENT PROCUREMENT AND PROPERTY ADMINISTRATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="174" onclick="call_login1()">HIGHER EDUCATION PROCLAMATION</option>
+
+
+
+               
+                        <option value="173" onclick="call_login1()">A PROCLAMATION TO PROMOTE AND REGULATE TRANSACTIONS OF PRECIOUS MINERALS</option>
+
+
+
+               
+                        <option value="172" onclick="call_login1()">A PROCLAMATION ON ANTI-TERRORISM</option>
+
+
+
+               
+                        <option value="171" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE RIGHTS AND BENEFITS OF OUTGOING HEADS OF STATE AND GOVERNMENT, SENIOR GOVERNMENT OFFICIALS, MEMBERSOF PARLIAMENT AND  JUDGES</option>
+
+
+
+               
+                        <option value="170" onclick="call_login1()">THE FEDERAL DEMOCRATIC REPUBLIC        OF ETHIOPIA FLAG PROCLAMATION</option>
+
+
+
+               
+                        <option value="169" onclick="call_login1()">A PROCLAMATION ON BIOSAFETY</option>
+
+
+
+               
+                        <option value="168" onclick="call_login1()">A PROCLAMATION  TO RATIFY THE AMENDMENTS MADE ON THE MONTREAL PROTOCOL</option>
+
+
+
+               
+                        <option value="132" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ELECTORAL CODE OF CONDUCT  FOR POLITICAL PARTIES</option>
+
+
+
+               
+                        <option value="130" onclick="call_login1()">A PROCLAMATION ON PREVENTION AND SUPPRESSION OF MONEY LAUNDERING AND THE FINANCING OF TERRORISM</option>
+
+
+
+               
+                        <option value="129" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN   AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE EXPORT-IMPORT BANK OF CHINA</option>
+
+
+
+               
+                        <option value="128" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING  AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="127" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR APICULTURE RESOURCES DEVELOPMENT AND PROTECTION</option>
+
+
+
+               
+                        <option value="126" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR FOOD, MEDICINE AND HEALTH CARE ADMINISTRATION AND CONTROL</option>
+
+
+
+               
+                        <option value="124" onclick="call_login1()">A PROCLAMATION TO RATIFY THE  AGREEMENT ON THE RECIPROCAL PROMOTION AND PROTECTION OF INVESTMENTS WITH THE GOVERNMENT OF THE REPUBLIC OF EQUATORIAL GUINEA</option>
+
+
+
+               
+                        <option value="123" onclick="call_login1()">A PROCLAMATION TO RATIFY THE PROJECT FINANCING    AGREEMENT    BETWEEN    THE FEDERAL    DEMOCRATIC    REPUBLIC    OF ETHIOPIA AND THE INTERNATIONAL FUND FOR AGRICALTURAL  DEVELOPMENT</option>
+
+
+
+               
+                        <option value="122" onclick="call_login1()">A PROCLAMATION TO AMEND THE ETHIOPIAN COMMODITY EXCHANGE PROCLAMATION</option>
+
+
+
+               
+                        <option value="121" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING    AGREEMENT    BETWEEN    THE FEDERAL    DEMOCRATIC    REPUBLIC    OF ETHIOPIA  AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="120" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="119" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DISCLOSURE AND REGISTRATION OF ASSETS</option>
+
+
+
+               
+                        <option value="118" onclick="call_login1()">A PROCLAMATION TO AMEND  THE OFFICE  OF THE FEDERAL AUDITOR GENERAL ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="117" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE INTERNATIONAL FUND FOR AGRICALTURAL DEVELOPMENT</option>
+
+
+
+               
+                        <option value="116" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE OPEC FUND FOR INTERNATIONAL  DEVELOPMENT</option>
+
+
+
+               
+                        <option value="115" onclick="call_login1()">FEDERAL GOVERNMENT SUPPLEMENTARY BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="114" onclick="call_login1()">ETHIOPIAN NATIONAL ANTHEM PROCLAMATION</option>
+
+
+
+               
+                        <option value="113" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE REGISTRATION AND CONTROL OF PESTICIDE</option>
+
+
+
+               
+                        <option value="112" onclick="call_login1()">A PROCLAMATION TO RATIFY THE INTERNATIONAL COFFEE AGREEMENT 2007</option>
+
+
+
+               
+                        <option value="111" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION ON THE RIGHTS OF  PERSONS WITH DISABILITY</option>
+
+
+
+               
+                        <option value="110" onclick="call_login1()">A PROCLAMATION TO RATIFY THE AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE GOVERNMENT OF THE STATE OF KUWAIT ON THE FIELD OF EXCHANGE OF MANPOWER</option>
+
+
+
+               
+                        <option value="109" onclick="call_login1()">A PROCLAMATION TO PROMOTE SUSTAINABLE DEVELOPMENT  OF MINERAL RESOURCES</option>
+
+
+
+               
+                        <option value="108" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT  BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE KUWAIT FUND FOR ARAB ECONOMIC DEVELOPMENT</option>
+
+
+
+               
+                        <option value="106" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE IDENTIFICATION, INSPECTION AND REGISTRATION OF VEHICLES</option>
+
+
+
+               
+                        <option value="105" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING    AGREEMENT    BETWEEN    THE FEDERAL    DEMOCRATIC    REPUBLIC    OF ETHIOPIA  AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="104" onclick="call_login1()">A PROCLAMATION TO RATIFY THE FINANCING    AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC    REPUBLIC    OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="103" onclick="call_login1()">AMENDED FEDERAL  JUDICIAL ADMINISTRATION COUNCIL ESTABLISHMENT PROCLAMATION</option>
+
+
+
+               
+                        <option value="102" onclick="call_login1()">TRADE PRACTICE AND CONSUMERS? PROTECTION PROCLAMATION</option>
+
+
+
+               
+                        <option value="101" onclick="call_login1()">COMMERCIAL REGISTRATION AND BUSINESS LICENSING PROCLAMATION</option>
+
+
+
+               
+                        <option value="100" onclick="call_login1()">FEDERAL GOVERNMENT BUDGET PROCLAMATION</option>
+
+
+
+               
+                        <option value="99" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN    AGREEMENT    BETWEEN    THE FEDERAL    DEMOCRATIC    REPUBLIC    OF ETHIOPIA  AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="98" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN    AGREEMENT    BETWEEN    THE  FEDERAL    DEMOCRATIC    REPUBLIC    OF  ETHIOPIA  AND THE EXPORT-IMPORT BANK OF CHINA</option>
+
+
+
+               
+                        <option value="97" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR SOCIAL HEALTH INSURANCE</option>
+
+
+
+               
+                        <option value="96" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CONVENTION ON THE RIGHTS OF  PERSONS WITH DISABILITY</option>
+
+
+
+               
+                        <option value="84" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN    AGREEMENT    BETWEEN    THE FEDERAL    DEMOCRATIC    REPUBLIC    OF ETHIOPIA  AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="83" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN    AGREEMENT    BETWEEN    THE  FEDERAL    DEMOCRATIC    REPUBLIC    OF  ETHIOPIA  AND THE EXPORT-IMPORT BANK OF CHINA</option>
+
+
+
+               
+                        <option value="82" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR SOCIAL HEALTH INSURANCE</option>
+
+
+
+               
+                        <option value="34" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE PROTECTION OF WITNESSES AND WHISTLEBLOWERS OF CRIMINAL OFFENCES</option>
+
+
+
+               
+                        <option value="33" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA AND THE AFRICAN DEVELOPMENT FUND</option>
+
+
+
+               
+                        <option value="32" onclick="call_login1()">A PROCLAMATION TO AMEND THE INCOME TAX PROCLAMATION</option>
+
+
+
+               
+                        <option value="31" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE ESTABLISHMENT OF THE SPORTS COMMISSION</option>
+
+
+
+               
+                        <option value="29" onclick="call_login1()">A PROCLAMATION TO RATIFY THE CREDIT AGREEMENT BETWEEN THE GOVERNMENT  OF THE FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE EXPORT-IMPORT  BANK OF CHINA</option>
+
+
+
+               
+                        <option value="28" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="27" onclick="call_login1()">A PROCLAMATION TO RATIFY THE LOAN AGREEMENT BETWEEN THE FEDERAL DEMOCRATIC REPUBLIC  OF ETHIOPIA AND THE INTERNATIONAL DEVELOPMENT ASSOCIATION</option>
+
+
+
+               
+                        <option value="16" onclick="call_login1()">A PROCLAMATION TO PROVIDE FOR THE DEFINITION OF POWERS AND DUTIES OF THE EXECUTIVE ORGANS OF THE FEDERAL DEMOCRATIC REPUBLIC OF ETHIOPIA</option>
+
+
+
+               
+
+          
+</select>
+         </form>
+   
+
+</div>
+<div style="width:240px;padding-top:10px;margin-left:530px;">
+    <p style="padding-left:50px;padding-bottom:20px;">Search By Bill No</p>
+ 
+         <form name="adoptedt" style="padding-left:40px;">
+                    
+              <input type="hidden" id="cat" value="Proclamation">
+          <select  id="billno" style="width:140px;">
+              
+                        <option value="971" onclick="call_login2()"> Proc. No. 745</option>
+               
+                        <option value="970" onclick="call_login2()"> Proc. No. 744</option>
+               
+                        <option value="969" onclick="call_login2()"> Proc. No. 743</option>
+               
+                        <option value="968" onclick="call_login2()"> Proc. No. 742</option>
+               
+                        <option value="967" onclick="call_login2()">Proc. No. 741</option>
+               
+                        <option value="966" onclick="call_login2()"> Proc. No. 740</option>
+               
+                        <option value="965" onclick="call_login2()"> Proc. No. 739</option>
+               
+                        <option value="963" onclick="call_login2()">Proc. No. 738</option>
+               
+                        <option value="951" onclick="call_login2()">Proc 737</option>
+               
+                        <option value="950" onclick="call_login2()">Proc No. 736</option>
+               
+                        <option value="949" onclick="call_login2()">Proc No 735</option>
+               
+                        <option value="948" onclick="call_login2()">Proc.No. 734</option>
+               
+                        <option value="947" onclick="call_login2()">Proc.No. 733</option>
+               
+                        <option value="946" onclick="call_login2()">Proc.No. 732</option>
+               
+                        <option value="945" onclick="call_login2()">Proc.No. 731</option>
+               
+                        <option value="944" onclick="call_login2()">Proc.No. 307</option>
+               
+                        <option value="943" onclick="call_login2()">Proc.No. 308</option>
+               
+                        <option value="942" onclick="call_login2()">Proc.No. 309</option>
+               
+                        <option value="941" onclick="call_login2()">Proc.No. 310</option>
+               
+                        <option value="940" onclick="call_login2()">Proc.No. 311</option>
+               
+                        <option value="939" onclick="call_login2()">Proc.No. 312</option>
+               
+                        <option value="938" onclick="call_login2()">Proc.No. 313</option>
+               
+                        <option value="937" onclick="call_login2()">Proc.No. 314</option>
+               
+                        <option value="936" onclick="call_login2()">Proc.No. 315</option>
+               
+                        <option value="935" onclick="call_login2()">Proc.No. 316</option>
+               
+                        <option value="934" onclick="call_login2()">Proc.No. 317</option>
+               
+                        <option value="933" onclick="call_login2()">Proc.No. 318</option>
+               
+                        <option value="932" onclick="call_login2()">Proc.No. 319</option>
+               
+                        <option value="931" onclick="call_login2()">Proc.No. 320</option>
+               
+                        <option value="930" onclick="call_login2()">Proc.No. 321</option>
+               
+                        <option value="929" onclick="call_login2()">Proc.No. 322</option>
+               
+                        <option value="928" onclick="call_login2()">Proc.No. 323</option>
+               
+                        <option value="927" onclick="call_login2()">Proc.No. 324</option>
+               
+                        <option value="926" onclick="call_login2()">Proc.No. 325</option>
+               
+                        <option value="925" onclick="call_login2()">Proc.No. 326</option>
+               
+                        <option value="924" onclick="call_login2()">Proc.no.327</option>
+               
+                        <option value="923" onclick="call_login2()">Proc.No. 328</option>
+               
+                        <option value="922" onclick="call_login2()">Proc.No. 329</option>
+               
+                        <option value="921" onclick="call_login2()">Proc.No. 330</option>
+               
+                        <option value="920" onclick="call_login2()">Proc.No. 331</option>
+               
+                        <option value="919" onclick="call_login2()">Proc.No. 332</option>
+               
+                        <option value="918" onclick="call_login2()">Proc.No. 333</option>
+               
+                        <option value="917" onclick="call_login2()">Proc.No. 334</option>
+               
+                        <option value="916" onclick="call_login2()">Proc.No. 335</option>
+               
+                        <option value="915" onclick="call_login2()">Proc.No. 336</option>
+               
+                        <option value="873" onclick="call_login2()">Proc 730</option>
+               
+                        <option value="872" onclick="call_login2()">Proc.729</option>
+               
+                        <option value="793" onclick="call_login2()">Proc.no.728</option>
+               
+                        <option value="792" onclick="call_login2()">Proc.no.727</option>
+               
+                        <option value="791" onclick="call_login2()">Proc.no.726</option>
+               
+                        <option value="790" onclick="call_login2()">Proc.no.725</option>
+               
+                        <option value="789" onclick="call_login2()">Proc. no. 724</option>
+               
+                        <option value="788" onclick="call_login2()">Proc.no.723</option>
+               
+                        <option value="787" onclick="call_login2()">Proc.no. 722</option>
+               
+                        <option value="786" onclick="call_login2()">Proc.no.721</option>
+               
+                        <option value="785" onclick="call_login2()">Proc.no. 720</option>
+               
+                        <option value="784" onclick="call_login2()">Proc.no.337</option>
+               
+                        <option value="783" onclick="call_login2()">Proc.no 338</option>
+               
+                        <option value="781" onclick="call_login2()">Proc.no.339</option>
+               
+                        <option value="780" onclick="call_login2()">Proc.no.340</option>
+               
+                        <option value="779" onclick="call_login2()">Proc.no.341</option>
+               
+                        <option value="778" onclick="call_login2()">Proc.no.341</option>
+               
+                        <option value="777" onclick="call_login2()">Proc.no 342</option>
+               
+                        <option value="776" onclick="call_login2()">Proc.no.343</option>
+               
+                        <option value="775" onclick="call_login2()">Proc.no.344</option>
+               
+                        <option value="774" onclick="call_login2()">Proc.no.345</option>
+               
+                        <option value="773" onclick="call_login2()">Proc.no.346</option>
+               
+                        <option value="772" onclick="call_login2()">Proc.no.347</option>
+               
+                        <option value="771" onclick="call_login2()">Proc.no.348</option>
+               
+                        <option value="770" onclick="call_login2()">Proc.no.349</option>
+               
+                        <option value="769" onclick="call_login2()">Proc.no.350</option>
+               
+                        <option value="768" onclick="call_login2()">Proc.no.351</option>
+               
+                        <option value="767" onclick="call_login2()">Proc.no.353</option>
+               
+                        <option value="766" onclick="call_login2()">Proc.no.353</option>
+               
+                        <option value="765" onclick="call_login2()">Proc.no 354</option>
+               
+                        <option value="764" onclick="call_login2()">Proc.no.355</option>
+               
+                        <option value="763" onclick="call_login2()">Proc.no.356</option>
+               
+                        <option value="762" onclick="call_login2()">Proc.no.357</option>
+               
+                        <option value="761" onclick="call_login2()">Proc.no.358</option>
+               
+                        <option value="760" onclick="call_login2()">Proc.no.359</option>
+               
+                        <option value="759" onclick="call_login2()">Proc.no. 360</option>
+               
+                        <option value="758" onclick="call_login2()">Proc.no.361</option>
+               
+                        <option value="757" onclick="call_login2()">Proc.no.362</option>
+               
+                        <option value="756" onclick="call_login2()">Proc.no.363</option>
+               
+                        <option value="755" onclick="call_login2()">Proc.no.364</option>
+               
+                        <option value="754" onclick="call_login2()">Proc no. 365</option>
+               
+                        <option value="753" onclick="call_login2()">Proc. no. 366</option>
+               
+                        <option value="752" onclick="call_login2()">Proc.no.367</option>
+               
+                        <option value="751" onclick="call_login2()">Proc.no.368</option>
+               
+                        <option value="750" onclick="call_login2()">Proc.no.369</option>
+               
+                        <option value="749" onclick="call_login2()">Proc.no.370</option>
+               
+                        <option value="748" onclick="call_login2()">Proc.no.371</option>
+               
+                        <option value="747" onclick="call_login2()">Proc.no .372</option>
+               
+                        <option value="700" onclick="call_login2()">373</option>
+               
+                        <option value="698" onclick="call_login2()">Proc 374</option>
+               
+                        <option value="697" onclick="call_login2()">Proc 375</option>
+               
+                        <option value="696" onclick="call_login2()">Proc 376</option>
+               
+                        <option value="695" onclick="call_login2()">Proc 377</option>
+               
+                        <option value="694" onclick="call_login2()">Proc 378</option>
+               
+                        <option value="693" onclick="call_login2()">Proc 379</option>
+               
+                        <option value="692" onclick="call_login2()">Proc 380</option>
+               
+                        <option value="691" onclick="call_login2()">Proc 381</option>
+               
+                        <option value="690" onclick="call_login2()">Proc 382</option>
+               
+                        <option value="689" onclick="call_login2()">Proc 383</option>
+               
+                        <option value="688" onclick="call_login2()">Proc 384</option>
+               
+                        <option value="687" onclick="call_login2()">Proc 385</option>
+               
+                        <option value="686" onclick="call_login2()">Proc 386</option>
+               
+                        <option value="685" onclick="call_login2()">Proc 387</option>
+               
+                        <option value="684" onclick="call_login2()">Proc 388</option>
+               
+                        <option value="683" onclick="call_login2()">Proc 389</option>
+               
+                        <option value="682" onclick="call_login2()">Proc 390</option>
+               
+                        <option value="681" onclick="call_login2()">Proc 391</option>
+               
+                        <option value="680" onclick="call_login2()">Proc 392</option>
+               
+                        <option value="679" onclick="call_login2()">Proc 393</option>
+               
+                        <option value="678" onclick="call_login2()">Proc 394</option>
+               
+                        <option value="677" onclick="call_login2()">Proc 395</option>
+               
+                        <option value="676" onclick="call_login2()">Proc 396</option>
+               
+                        <option value="675" onclick="call_login2()">Proc 397</option>
+               
+                        <option value="674" onclick="call_login2()">Proc 398</option>
+               
+                        <option value="673" onclick="call_login2()">Proc 399</option>
+               
+                        <option value="672" onclick="call_login2()">Proc 400</option>
+               
+                        <option value="671" onclick="call_login2()">Proc 402</option>
+               
+                        <option value="670" onclick="call_login2()">Proc 403</option>
+               
+                        <option value="669" onclick="call_login2()">Proc 404</option>
+               
+                        <option value="668" onclick="call_login2()">Proc 405</option>
+               
+                        <option value="667" onclick="call_login2()">Proc.406</option>
+               
+                        <option value="666" onclick="call_login2()">Proc.407</option>
+               
+                        <option value="665" onclick="call_login2()">Proc.408</option>
+               
+                        <option value="664" onclick="call_login2()">Proc.409</option>
+               
+                        <option value="663" onclick="call_login2()">Proc.410</option>
+               
+                        <option value="662" onclick="call_login2()">Proc.411</option>
+               
+                        <option value="661" onclick="call_login2()">Proc.412</option>
+               
+                        <option value="660" onclick="call_login2()">Proc.413</option>
+               
+                        <option value="659" onclick="call_login2()">Proc.415</option>
+               
+                        <option value="657" onclick="call_login2()">Proc.417</option>
+               
+                        <option value="656" onclick="call_login2()">Proc. 418</option>
+               
+                        <option value="655" onclick="call_login2()">Proc 419</option>
+               
+                        <option value="654" onclick="call_login2()">Proc.420</option>
+               
+                        <option value="653" onclick="call_login2()">Proc.421</option>
+               
+                        <option value="652" onclick="call_login2()">Proc. 422</option>
+               
+                        <option value="651" onclick="call_login2()">Proc. 423</option>
+               
+                        <option value="650" onclick="call_login2()">Proc. 424</option>
+               
+                        <option value="649" onclick="call_login2()">Proc 425</option>
+               
+                        <option value="648" onclick="call_login2()">Proc 426</option>
+               
+                        <option value="647" onclick="call_login2()">Proc. 427</option>
+               
+                        <option value="646" onclick="call_login2()">Proc 428 </option>
+               
+                        <option value="645" onclick="call_login2()">Proc 429</option>
+               
+                        <option value="644" onclick="call_login2()">Proc 430</option>
+               
+                        <option value="643" onclick="call_login2()">Proc. 431</option>
+               
+                        <option value="642" onclick="call_login2()">Proc 432</option>
+               
+                        <option value="641" onclick="call_login2()">Proc.No 458</option>
+               
+                        <option value="640" onclick="call_login2()">Proc.No 457</option>
+               
+                        <option value="639" onclick="call_login2()">Proc.No 456</option>
+               
+                        <option value="638" onclick="call_login2()">Proc.No 455</option>
+               
+                        <option value="637" onclick="call_login2()">Proc.No 451</option>
+               
+                        <option value="636" onclick="call_login2()">Proc.No 450</option>
+               
+                        <option value="635" onclick="call_login2()">Proc.No 44</option>
+               
+                        <option value="634" onclick="call_login2()">Proc. No 448</option>
+               
+                        <option value="633" onclick="call_login2()">Proc. No 447</option>
+               
+                        <option value="632" onclick="call_login2()">Proc.No 446</option>
+               
+                        <option value="631" onclick="call_login2()">Proc.No 445</option>
+               
+                        <option value="630" onclick="call_login2()">Proc.No 444</option>
+               
+                        <option value="629" onclick="call_login2()">Proc.No 443</option>
+               
+                        <option value="628" onclick="call_login2()">Proc.No 442</option>
+               
+                        <option value="627" onclick="call_login2()">Proc. No 441</option>
+               
+                        <option value="626" onclick="call_login2()">Proc.No 440</option>
+               
+                        <option value="625" onclick="call_login2()">Proc.No 439</option>
+               
+                        <option value="624" onclick="call_login2()">Proc.No 438</option>
+               
+                        <option value="623" onclick="call_login2()">Proc.No 436</option>
+               
+                        <option value="581" onclick="call_login2()">Proc. No 437</option>
+               
+                        <option value="579" onclick="call_login2()">Proc. No 435</option>
+               
+                        <option value="578" onclick="call_login2()">Proc. No 434</option>
+               
+                        <option value="577" onclick="call_login2()">Proc. No 433</option>
+               
+                        <option value="476" onclick="call_login2()">Proc.no.554</option>
+               
+                        <option value="475" onclick="call_login2()">Proc.no.553</option>
+               
+                        <option value="474" onclick="call_login2()">Proc.no.552</option>
+               
+                        <option value="473" onclick="call_login2()">Proc.no.551</option>
+               
+                        <option value="472" onclick="call_login2()">Proc.no.550</option>
+               
+                        <option value="471" onclick="call_login2()">Proc.no.549</option>
+               
+                        <option value="470" onclick="call_login2()">Proc.no.548</option>
+               
+                        <option value="469" onclick="call_login2()">Proc.no.547</option>
+               
+                        <option value="468" onclick="call_login2()">Proc.no.547</option>
+               
+                        <option value="467" onclick="call_login2()">Proc.no.545</option>
+               
+                        <option value="466" onclick="call_login2()">Proc.no.544</option>
+               
+                        <option value="465" onclick="call_login2()">Proc.no.543</option>
+               
+                        <option value="464" onclick="call_login2()">Proc.no.542</option>
+               
+                        <option value="463" onclick="call_login2()">Proc.no.541</option>
+               
+                        <option value="462" onclick="call_login2()">Proc.no.540</option>
+               
+                        <option value="461" onclick="call_login2()">Proc.no.539</option>
+               
+                        <option value="460" onclick="call_login2()">Proc.no.538</option>
+               
+                        <option value="459" onclick="call_login2()">Proc.no.537</option>
+               
+                        <option value="458" onclick="call_login2()">Proc.no.536</option>
+               
+                        <option value="457" onclick="call_login2()">Proc.no.535</option>
+               
+                        <option value="456" onclick="call_login2()">Proc.no.534</option>
+               
+                        <option value="455" onclick="call_login2()">Proc.no.533</option>
+               
+                        <option value="454" onclick="call_login2()">Proc.no.532</option>
+               
+                        <option value="453" onclick="call_login2()">Proc.no.531</option>
+               
+                        <option value="452" onclick="call_login2()">Proc.no.530</option>
+               
+                        <option value="451" onclick="call_login2()">Proc.no.529</option>
+               
+                        <option value="450" onclick="call_login2()">Proc.no.528</option>
+               
+                        <option value="449" onclick="call_login2()">Proc.no.527</option>
+               
+                        <option value="448" onclick="call_login2()">Proc.no.526</option>
+               
+                        <option value="447" onclick="call_login2()">Proc.no.718</option>
+               
+                        <option value="446" onclick="call_login2()">Proc.no.717</option>
+               
+                        <option value="445" onclick="call_login2()">Proc.no.715</option>
+               
+                        <option value="444" onclick="call_login2()">Proc.no.714</option>
+               
+                        <option value="443" onclick="call_login2()">Proc.no.713</option>
+               
+                        <option value="442" onclick="call_login2()">Proc.no.712</option>
+               
+                        <option value="441" onclick="call_login2()">Proc.no.711</option>
+               
+                        <option value="440" onclick="call_login2()">Proc.no.710</option>
+               
+                        <option value="439" onclick="call_login2()">Proc.no.709</option>
+               
+                        <option value="438" onclick="call_login2()">Proc.no.708</option>
+               
+                        <option value="437" onclick="call_login2()">Proc.no.707</option>
+               
+                        <option value="436" onclick="call_login2()">Proc.no.706</option>
+               
+                        <option value="435" onclick="call_login2()">Proc.no.705</option>
+               
+                        <option value="434" onclick="call_login2()">Proc.no.704</option>
+               
+                        <option value="433" onclick="call_login2()">Proc.no.703</option>
+               
+                        <option value="432" onclick="call_login2()">Proc.no.702</option>
+               
+                        <option value="431" onclick="call_login2()">Proc.no.701</option>
+               
+                        <option value="430" onclick="call_login2()">Proc.no.700</option>
+               
+                        <option value="426" onclick="call_login2()">Proc.no.480</option>
+               
+                        <option value="425" onclick="call_login2()">Proc.no.500</option>
+               
+                        <option value="424" onclick="call_login2()">Proc.no.504</option>
+               
+                        <option value="423" onclick="call_login2()">Proc.no.503</option>
+               
+                        <option value="422" onclick="call_login2()">Proc.no.502</option>
+               
+                        <option value="421" onclick="call_login2()">Proc.no.501</option>
+               
+                        <option value="420" onclick="call_login2()">Proc.no.499</option>
+               
+                        <option value="419" onclick="call_login2()">Proc.no.498</option>
+               
+                        <option value="418" onclick="call_login2()">Proc.no.497</option>
+               
+                        <option value="417" onclick="call_login2()">Proc.no.496</option>
+               
+                        <option value="416" onclick="call_login2()">Proc.no.495</option>
+               
+                        <option value="415" onclick="call_login2()">Proc.no.494</option>
+               
+                        <option value="414" onclick="call_login2()">Proc.no.493</option>
+               
+                        <option value="413" onclick="call_login2()">Proc.no.492</option>
+               
+                        <option value="412" onclick="call_login2()">Proc.no.491</option>
+               
+                        <option value="411" onclick="call_login2()">Proc.no.490</option>
+               
+                        <option value="410" onclick="call_login2()">Proc.no.489</option>
+               
+                        <option value="409" onclick="call_login2()">Proc.no.488</option>
+               
+                        <option value="408" onclick="call_login2()">Proc.no.487</option>
+               
+                        <option value="407" onclick="call_login2()">Proc.no.486</option>
+               
+                        <option value="406" onclick="call_login2()">Proc.no.485</option>
+               
+                        <option value="405" onclick="call_login2()">Proc.no.484</option>
+               
+                        <option value="404" onclick="call_login2()">Proc.no.483</option>
+               
+                        <option value="403" onclick="call_login2()">Proc.no.482</option>
+               
+                        <option value="402" onclick="call_login2()">Proc.no.481</option>
+               
+                        <option value="401" onclick="call_login2()">Proc.no.479</option>
+               
+                        <option value="400" onclick="call_login2()">Proc.no.478</option>
+               
+                        <option value="399" onclick="call_login2()">Proc.no.477</option>
+               
+                        <option value="398" onclick="call_login2()">Proc.no.476</option>
+               
+                        <option value="397" onclick="call_login2()">Proc.no.475</option>
+               
+                        <option value="396" onclick="call_login2()">Proc.no.474</option>
+               
+                        <option value="395" onclick="call_login2()">Proc.no.473</option>
+               
+                        <option value="394" onclick="call_login2()">Proc.no.472</option>
+               
+                        <option value="393" onclick="call_login2()">Proc.no.471</option>
+               
+                        <option value="392" onclick="call_login2()">Proc.no.525</option>
+               
+                        <option value="391" onclick="call_login2()">Proc.no.524</option>
+               
+                        <option value="390" onclick="call_login2()">Proc.no.523</option>
+               
+                        <option value="389" onclick="call_login2()">Proc.no.522</option>
+               
+                        <option value="388" onclick="call_login2()">Proc.no.521</option>
+               
+                        <option value="387" onclick="call_login2()">Proc.no.520</option>
+               
+                        <option value="386" onclick="call_login2()">Proc.no.519</option>
+               
+                        <option value="385" onclick="call_login2()">Proc.no.518</option>
+               
+                        <option value="384" onclick="call_login2()">Proc.no.517</option>
+               
+                        <option value="383" onclick="call_login2()">Proc.no.516</option>
+               
+                        <option value="382" onclick="call_login2()">Proc.no.515</option>
+               
+                        <option value="381" onclick="call_login2()">Proc.no.514</option>
+               
+                        <option value="380" onclick="call_login2()">Proc.no.513</option>
+               
+                        <option value="379" onclick="call_login2()">Proc.no.512</option>
+               
+                        <option value="378" onclick="call_login2()">Proc.no.511</option>
+               
+                        <option value="377" onclick="call_login2()">Proc.no.510</option>
+               
+                        <option value="376" onclick="call_login2()">Proc.no.509</option>
+               
+                        <option value="375" onclick="call_login2()">Proc.no.508</option>
+               
+                        <option value="374" onclick="call_login2()">Proc.no.507</option>
+               
+                        <option value="373" onclick="call_login2()">Proc.no.506</option>
+               
+                        <option value="372" onclick="call_login2()">Proc.no.505</option>
+               
+                        <option value="324" onclick="call_login2()">Proc.no.555</option>
+               
+                        <option value="323" onclick="call_login2()">Proc.no.556</option>
+               
+                        <option value="322" onclick="call_login2()">Proc.no.557</option>
+               
+                        <option value="320" onclick="call_login2()">Proc.no.559</option>
+               
+                        <option value="319" onclick="call_login2()">Proc.no.560</option>
+               
+                        <option value="318" onclick="call_login2()">Proc.no.561</option>
+               
+                        <option value="317" onclick="call_login2()">Proc.no.562</option>
+               
+                        <option value="316" onclick="call_login2()">Proc.no.563</option>
+               
+                        <option value="315" onclick="call_login2()">Proc.no.564</option>
+               
+                        <option value="314" onclick="call_login2()">Proc.no.565</option>
+               
+                        <option value="313" onclick="call_login2()">Proc.no.566</option>
+               
+                        <option value="312" onclick="call_login2()">Proc.no.567</option>
+               
+                        <option value="311" onclick="call_login2()">Proc.no.568</option>
+               
+                        <option value="310" onclick="call_login2()">Proc.no.569</option>
+               
+                        <option value="309" onclick="call_login2()">Proc.no.570</option>
+               
+                        <option value="308" onclick="call_login2()">Proc.no.571</option>
+               
+                        <option value="307" onclick="call_login2()">Proc.no.572</option>
+               
+                        <option value="306" onclick="call_login2()">Proc.no.573</option>
+               
+                        <option value="305" onclick="call_login2()">Proc.no.574</option>
+               
+                        <option value="304" onclick="call_login2()">Proc.no.575</option>
+               
+                        <option value="303" onclick="call_login2()">Proc.no.576</option>
+               
+                        <option value="302" onclick="call_login2()">Proc.no.577</option>
+               
+                        <option value="301" onclick="call_login2()">Proc.no.578</option>
+               
+                        <option value="300" onclick="call_login2()">Proc.no.579</option>
+               
+                        <option value="299" onclick="call_login2()">Proc.no.580</option>
+               
+                        <option value="298" onclick="call_login2()">Proc.no.581</option>
+               
+                        <option value="297" onclick="call_login2()">Proc.no.582</option>
+               
+                        <option value="296" onclick="call_login2()">Proc.no.583</option>
+               
+                        <option value="295" onclick="call_login2()">Proc.no.584</option>
+               
+                        <option value="294" onclick="call_login2()">Proc.no.585</option>
+               
+                        <option value="293" onclick="call_login2()">Proc.no.586</option>
+               
+                        <option value="292" onclick="call_login2()">Proc.no.587</option>
+               
+                        <option value="291" onclick="call_login2()">Proc.no.588</option>
+               
+                        <option value="290" onclick="call_login2()">Proc.no.589</option>
+               
+                        <option value="289" onclick="call_login2()">Proc.no.591</option>
+               
+                        <option value="288" onclick="call_login2()">Proc.no.592</option>
+               
+                        <option value="287" onclick="call_login2()">Proc.no.593</option>
+               
+                        <option value="286" onclick="call_login2()">Proc.no.594</option>
+               
+                        <option value="285" onclick="call_login2()">Proc.no.595</option>
+               
+                        <option value="284" onclick="call_login2()">Proc.no.596</option>
+               
+                        <option value="283" onclick="call_login2()">Proc.no.597</option>
+               
+                        <option value="282" onclick="call_login2()">Proc.no.598</option>
+               
+                        <option value="281" onclick="call_login2()">Proc.no.599</option>
+               
+                        <option value="280" onclick="call_login2()">Proc.no.600</option>
+               
+                        <option value="279" onclick="call_login2()">Proc.no.601</option>
+               
+                        <option value="278" onclick="call_login2()">Proc.no.602</option>
+               
+                        <option value="222" onclick="call_login2()">Proc.no.590</option>
+               
+                        <option value="221" onclick="call_login2()">Proc.no.603</option>
+               
+                        <option value="220" onclick="call_login2()">Proc.no.604</option>
+               
+                        <option value="219" onclick="call_login2()">Proc.no.605</option>
+               
+                        <option value="218" onclick="call_login2()">Proc.no.606</option>
+               
+                        <option value="217" onclick="call_login2()">Proc.no.607</option>
+               
+                        <option value="216" onclick="call_login2()">Proc.no.608</option>
+               
+                        <option value="215" onclick="call_login2()">Proc.no.609</option>
+               
+                        <option value="214" onclick="call_login2()">Proc.no.610</option>
+               
+                        <option value="213" onclick="call_login2()">Proc.no.611</option>
+               
+                        <option value="212" onclick="call_login2()">Proc.no.612</option>
+               
+                        <option value="211" onclick="call_login2()">Proc.no.613</option>
+               
+                        <option value="210" onclick="call_login2()">Proc.no.614</option>
+               
+                        <option value="209" onclick="call_login2()">Proc.no.615</option>
+               
+                        <option value="208" onclick="call_login2()">Proc.no.616</option>
+               
+                        <option value="207" onclick="call_login2()">Proc.no.617</option>
+               
+                        <option value="206" onclick="call_login2()">Proc.no.618</option>
+               
+                        <option value="205" onclick="call_login2()">Proc.no.619</option>
+               
+                        <option value="204" onclick="call_login2()">Proc.no.620</option>
+               
+                        <option value="203" onclick="call_login2()">Proc.no.621</option>
+               
+                        <option value="202" onclick="call_login2()">Proc.no.622</option>
+               
+                        <option value="201" onclick="call_login2()">Proc.no.623</option>
+               
+                        <option value="200" onclick="call_login2()">Proc.no.624</option>
+               
+                        <option value="199" onclick="call_login2()">Proc.no.625</option>
+               
+                        <option value="198" onclick="call_login2()">Proc.no.626</option>
+               
+                        <option value="197" onclick="call_login2()">Proc.no.627</option>
+               
+                        <option value="196" onclick="call_login2()">Proc.no.628</option>
+               
+                        <option value="195" onclick="call_login2()">Proc.no.629</option>
+               
+                        <option value="194" onclick="call_login2()">Proc.no.630</option>
+               
+                        <option value="193" onclick="call_login2()">Proc.no.631</option>
+               
+                        <option value="192" onclick="call_login2()">Proc.no.632</option>
+               
+                        <option value="191" onclick="call_login2()">Proc.no.633</option>
+               
+                        <option value="190" onclick="call_login2()">Proc.no.634</option>
+               
+                        <option value="189" onclick="call_login2()">Proc.no.635</option>
+               
+                        <option value="188" onclick="call_login2()">Proc.no.636</option>
+               
+                        <option value="187" onclick="call_login2()">Proc.no.637</option>
+               
+                        <option value="186" onclick="call_login2()">Proc.no.638</option>
+               
+                        <option value="185" onclick="call_login2()">Proc.no.639</option>
+               
+                        <option value="184" onclick="call_login2()">Proc.no.640</option>
+               
+                        <option value="183" onclick="call_login2()">Proc.no.641</option>
+               
+                        <option value="182" onclick="call_login2()">Proc.no.642</option>
+               
+                        <option value="181" onclick="call_login2()">Proc.no.643</option>
+               
+                        <option value="179" onclick="call_login2()">Proc.no.645</option>
+               
+                        <option value="178" onclick="call_login2()">Proc.no.646</option>
+               
+                        <option value="177" onclick="call_login2()">Proc.no.647</option>
+               
+                        <option value="176" onclick="call_login2()">Proc.no.648</option>
+               
+                        <option value="175" onclick="call_login2()">Proc.no.649</option>
+               
+                        <option value="174" onclick="call_login2()">Proc.no.650</option>
+               
+                        <option value="173" onclick="call_login2()">Proc.no.651</option>
+               
+                        <option value="172" onclick="call_login2()">Proc.no.652</option>
+               
+                        <option value="171" onclick="call_login2()">Proc.no.653</option>
+               
+                        <option value="170" onclick="call_login2()">Proc.no.654</option>
+               
+                        <option value="169" onclick="call_login2()">Proc.no.655</option>
+               
+                        <option value="168" onclick="call_login2()">Proc. No 656</option>
+               
+                        <option value="132" onclick="call_login2()">Proc.no.662</option>
+               
+                        <option value="130" onclick="call_login2()">Proc.no.657</option>
+               
+                        <option value="129" onclick="call_login2()">Proc.no.658</option>
+               
+                        <option value="128" onclick="call_login2()">Proc.no.659</option>
+               
+                        <option value="127" onclick="call_login2()">Proc.no.660</option>
+               
+                        <option value="126" onclick="call_login2()">Proc.no.661</option>
+               
+                        <option value="124" onclick="call_login2()">Proc.no.663</option>
+               
+                        <option value="123" onclick="call_login2()">Proc.no.664</option>
+               
+                        <option value="122" onclick="call_login2()">Proc.no.665</option>
+               
+                        <option value="121" onclick="call_login2()">Proc no. 666</option>
+               
+                        <option value="120" onclick="call_login2()">Proc. no. 667</option>
+               
+                        <option value="119" onclick="call_login2()">Proc no. 668</option>
+               
+                        <option value="118" onclick="call_login2()">Proc.no.669</option>
+               
+                        <option value="117" onclick="call_login2()">Proc.no.670</option>
+               
+                        <option value="116" onclick="call_login2()">Proc.no.671</option>
+               
+                        <option value="115" onclick="call_login2()">Proc.no.672</option>
+               
+                        <option value="114" onclick="call_login2()">Proc.no.673</option>
+               
+                        <option value="113" onclick="call_login2()">Proc.no.674</option>
+               
+                        <option value="112" onclick="call_login2()">Proc.no.675</option>
+               
+                        <option value="111" onclick="call_login2()">Proc.no.676</option>
+               
+                        <option value="110" onclick="call_login2()">Proc.no.677</option>
+               
+                        <option value="109" onclick="call_login2()">Proc.no.678</option>
+               
+                        <option value="108" onclick="call_login2()">Proc.no.679</option>
+               
+                        <option value="106" onclick="call_login2()">Proc.no.681</option>
+               
+                        <option value="105" onclick="call_login2()">Proc.no.682</option>
+               
+                        <option value="104" onclick="call_login2()">Proc.no.683</option>
+               
+                        <option value="103" onclick="call_login2()">Proc.no.684</option>
+               
+                        <option value="102" onclick="call_login2()">Proc.no.685</option>
+               
+                        <option value="101" onclick="call_login2()">Proc.no.686</option>
+               
+                        <option value="100" onclick="call_login2()">Proc.no.687</option>
+               
+                        <option value="99" onclick="call_login2()">Proc.no 688</option>
+               
+                        <option value="98" onclick="call_login2()">Proc.no.689</option>
+               
+                        <option value="97" onclick="call_login2()">Proc.no 690</option>
+               
+                        <option value="96" onclick="call_login2()">675</option>
+               
+                        <option value="84" onclick="call_login2()">Proc.no.688</option>
+               
+                        <option value="83" onclick="call_login2()">Proc.689</option>
+               
+                        <option value="82" onclick="call_login2()">Proc.no.690</option>
+               
+                        <option value="34" onclick="call_login2()">Proc.699</option>
+               
+                        <option value="33" onclick="call_login2()">Proc.no.698</option>
+               
+                        <option value="32" onclick="call_login2()">Proc.no.693</option>
+               
+                        <option value="31" onclick="call_login2()">Proc.no.692</option>
+               
+                        <option value="29" onclick="call_login2()">Proc.no 696</option>
+               
+                        <option value="28" onclick="call_login2()">Proc.no 695</option>
+               
+                        <option value="27" onclick="call_login2()">Proc.no. 694</option>
+               
+                        <option value="16" onclick="call_login2()">Proc No 691</option>
+               
+
+          
+</select>
+         </form>
+      
+
+</div>
+<div>
+    <span id="time"></span>
+
+</div>
+<p style="clear:both;">&nbsp;</p>
+
+ </div>
+
+<p style="clear:both;">&nbsp;</p>
+
+</div>
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+   "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>JSP Page</title>
+    </head>
+    <body>
+      <div class="bottom">
+<p style="color:white;padding-left:470px;font-size:18px;padding-top:10px;">Copyright © 2011  </p>
+<p style="color:white;padding-left:320px;font-size:17px;">The FDRE;House of People s' Representatives. All Rights Reserved!  </p>
+  </div>
+    </body>
+</html>
+
+
+
+
+
+
+
+</div>
+    </body>
+</html>
+
