@@ -8,3 +8,4 @@ House of Peoples' Representatives
 * Keep the site up-to-date with nice Django-based interface for constant updates
 * Make the site usable and useful
 * Redesign the site to make it visually appealing
+* Create a high standard for government sites (with support for multiple languages, giving citizens info and a voice through sites etc.)
