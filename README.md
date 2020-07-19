@@ -1,10 +1,10 @@
-<div>
+<div style="text-align: center">
   <img align="left" width="100" height="100" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg"></img>
   <h1>House of People's Representatives</h1>
 </div>
 
+<h2>Mission</h2>
 
-## Goals of recreating the site
 * Start a movement going to use open-source software to build the country
 * Use the movement to help Ethiopians become programmers and have work experience outside of actual work
 * Re-host the site so that it doesn't go down when Internet is down in Ethiopia
