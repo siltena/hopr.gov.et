@@ -1,9 +1,8 @@
-<div>
-  <img align="left" width="110" height="110" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg"></img>
+<div align="center">
+  <img src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg" alt="hopr logo"></img>
   <br>
   <h1>House of People's Representatives</h1>
 </div>
-<br>
 
 ## Mission
 * Start a movement going to use open-source software to build the country
