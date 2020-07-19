@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg" alt="hopr logo"></img>
+  <img width="250" height="250" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg" alt="hopr logo"></img>
   <br>
   <h1>House of People's Representatives</h1>
 </div>
