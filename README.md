@@ -1,4 +1,4 @@
-<div style="display: flex; align-items: center;">
+<div>
   <img align="left" width="110" height="110" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg"></img>
   <br>
   <h1>House of People's Representatives</h1>
