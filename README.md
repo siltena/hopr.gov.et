@@ -1,5 +1,6 @@
-<div style="text-align: center">
-  <img align="left" width="100" height="100" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg"></img>
+<div style="display: flex; align-items: center;">
+  <img align="left" width="110" height="110" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg"></img>
+  <br>
   <h1>House of People's Representatives</h1>
 </div>
 <br>
@@ -12,3 +13,6 @@
 * Make the site usable and useful
 * Redesign the site to make it visually appealing
 * Create a high standard for government sites (with support for multiple languages, giving citizens info and a voice through sites etc.)
+
+## Credits
+Created by the [ስልጠና (Siltena)](https://github.com/siltena) team
