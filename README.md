@@ -19,7 +19,7 @@ Add information on how to deploy to a release environment.
 
 ## Goals
 * Start a movement going to use open-source software to build the country
-* Use the movement to help Ethiopians become programmers and have work experience outside of actual work
+* Use the movement to help Ethiopians build up their skills in programming, design etc. and have work experience even when they don't have "real" work experience
 * Re-host the site so that it doesn't go down when Internet is down in Ethiopia
 * Keep the site up-to-date with nice Django-based interface for constant updates
 * Make the site usable and useful
