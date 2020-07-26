@@ -34,6 +34,23 @@
         .nav-tabs .nav-item {
             font-size: 12px;
         }
+
+        .list-group h5 {
+            font-size: 16px;
+        }
+
+        .list-group p {
+            font-size: 14px;
+        }
+
+        .list-group small {
+            font-size: 12px;
+        }
+        
+        .jumbotron-row {
+            height: 300px;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
@@ -93,7 +110,7 @@
                 </form>
             </div>
         </nav>
-        <div class="row border-top pt-3">
+        <div class="row border-top pt-3 jumbotron-row">
             <div class="col-sm-7">
                 <div id="carousel-example-1z" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
@@ -141,20 +158,78 @@
                 </div>
             </div>
             <div class="col-sm-5">
-                <ul class="nav nav-tabs">
+                <ul class="nav nav-tabs" role="tablist">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#">Committee Schedules</a>
+                        <a class="nav-link active" id="committee-tab" data-toggle="tab" href="#committee" role="tab" aria-controls="committee" aria-selected="true">Committee</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Events</a>
+                        <a class="nav-link" id="schedules-tab" data-toggle="tab" href="#schedules" role="tab" aria-controls="schedules" aria-selected="false">Schedules</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Proclamations</a>
+                        <a class="nav-link" id="diplomacy-tab" data-toggle="tab" href="#diplomacy" role="tab" aria-controls="diplomacy" aria-selected="false">Public Diplomacy</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Bills & Reports</a>
+                        <a class="nav-link" id="proclamations-tab" data-toggle="tab" href="#proclamations" role="tab" aria-controls="proclamations" aria-selected="false">Proclamations</a>
                     </li>
                 </ul>
+                <div class="tab-content" id="myTabContent">
+                    <!-- Committee tab -->
+                    <div class="tab-pane fade show active" id="committee" role="tabpanel" aria-labelledby="committee-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                            <li class="list-group-item">Committee News</li>
+                        </ul>
+                    </div>
+                    <!-- Schedules tab -->
+                    <div class="tab-pane fade" id="schedules" role="tabpanel" aria-labelledby="schedules-tab">
+                        No schedules
+                    </div>
+                    <!-- Public diplomacy tab -->
+                    <div class="tab-pane fade" id="diplomacy" role="tabpanel" aria-labelledby="diplomacy-tab">
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of diplomacy news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article. The summary should be no longer than two lines.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of diplomacy news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">There is a name for this short summary of the text I can't remember.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of diplomacy news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">There is a name for this short summary of the text I can't remember.</p>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Proclamations tab -->
+                    <div class="tab-pane fade" id="proclamations" role="tabpanel" aria-labelledby="proclamations-tab">
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Proclamation</li>
+                            <li class="list-group-item">Proclamation</li>
+                            <li class="list-group-item">Proclamation</li>
+                            <li class="list-group-item">Proclamation</li>
+                            <li class="list-group-item">Proclamation</li>
+                            <li class="list-group-item">Proclamation</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
