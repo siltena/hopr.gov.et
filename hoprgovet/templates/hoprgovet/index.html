@@ -33,11 +33,11 @@
         }
 
         .list-group h5 {
-            font-size: 16px;
+            font-size: 14px;
         }
 
         .list-group p {
-            font-size: 14px;
+            font-size: 13px;
         }
 
         .list-group small {
@@ -47,6 +47,25 @@
         .tab-pane .list-group {
             max-height: 250px;
             overflow-y: scroll;
+        }
+
+        /**
+         * Scrollbar
+         */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #888;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
         }
     </style>
 </head>
@@ -172,18 +191,43 @@
                 <div class="tab-content" id="myTabContent">
                     <!-- Committee tab -->
                     <div class="tab-pane fade show active" id="committee" role="tabpanel" aria-labelledby="committee-tab">
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                            <li class="list-group-item">Committee News</li>
-                        </ul>
+                        <div class="list-group list-group-flush">
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of the committee news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article being linked.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of the committee news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article being linked.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of the committee news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article being linked.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of the committee news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article being linked.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of the committee news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">A short summary that describes the news article being linked.</p>
+                            </a>
+                        </div>
                     </div>
                     <!-- Schedules tab -->
                     <div class="tab-pane fade" id="schedules" role="tabpanel" aria-labelledby="schedules-tab">
@@ -198,6 +242,13 @@
                                     <small>3 days ago</small>
                                 </div>
                                 <p class="mb-1">A short summary that describes the news article. The summary should be no longer than two lines.</p>
+                            </a>
+                            <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Title of diplomacy news</h5>
+                                    <small>3 days ago</small>
+                                </div>
+                                <p class="mb-1">There is a name for this short summary of the text I can't remember.</p>
                             </a>
                             <a href="#" class="list-group-item list-group-item-action flex-column align-items-start">
                                 <div class="d-flex w-100 justify-content-between">
