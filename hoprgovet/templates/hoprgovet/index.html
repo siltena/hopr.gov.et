@@ -20,6 +20,10 @@
 
     <!-- Custom CSS -->
     <style type="text/css" media="all">
+        body {
+            position: relative;
+        }
+
         .header-link {
             font-size: 14px;
             font-family: "Segoe UI";
@@ -71,6 +75,18 @@
             background: #555;
         }
     </style>
+
+    <!-- Custom JavaScript -->
+    <script charset="utf-8">
+        $(document).ready(function() {
+            setTimeout(function () {
+                $("#live-toast").toast("show");
+                setTimeout(function () {
+                    $("#reply-toast").toast("show");
+                }, 1000);
+            }, 2000);
+        });
+    </script>
 </head>
 <body>
     <div class="container">
@@ -119,8 +135,10 @@
                         <a class="nav-link header-link" href="#">Secretariat</a>
                     </li>
                 </ul>
-                <i class="fa fa-circle mr-1" aria-hidden="true" style="color: red; font-size: 10px"></i>
-                <small class="mr-4" style="font-size: 11px">Live</small>
+                <div class="border rounded mr-4">
+                    <i class="fa fa-circle mr-2 ml-2" aria-hidden="true" style="color: red; font-size: 10px"></i>
+                    <small class="mr-2" style="font-size: 12px">Live</small>
+                </div>
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group input-group-sm">
                         <input class="form-control" type="search" aria-label="Search">
@@ -290,7 +308,7 @@
         <div class="border-top mt-2 pt-2">
             <div class="row">
                 <div class="col-sm-12">
-                    Hello
+                    
                 </div>
             </div>
         </div>
@@ -339,6 +357,36 @@
                 </div>
             </div>
         </footer>
+    </div>
+    <div aria-live="polite" aria-atomic="true"> 
+        <div style="position: absolute; top: 20px; right: 20px;">
+            <div id="reply-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false"> 
+                <div class="toast-header">
+                    <i class="rounded mr-2 fa fa-comments" style="font-size: 15px;" alt="Live Status"></i>
+                    <strong class="mr-auto">You have a reply</strong>
+                    <small>few seconds ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    You have a reply in your post titled  <i>"How do I access the internal VPN network".</i>
+                </div>
+            </div>
+            <div id="live-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-autohide="false"> 
+                <div class="toast-header">
+                    <i class="rounded mr-2 fa fa-globe" style="font-size: 15px;" alt="Live Status"></i>
+                    <strong class="mr-auto">House is live</strong>
+                    <small>3 minutes ago</small>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    House is currently in session. Click to watch.
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
