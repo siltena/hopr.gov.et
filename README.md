@@ -1,11 +1,12 @@
 <div align="center">
   <img width="250" height="250" src="https://www.ezega.com/userfiles/HoPR-Ethiopia.jpg" alt="hopr logo"></img>
   <br>
-  <h1>House of People's Representatives</h1>
+  <h1>House of Peoples' Representatives</h1>
 </div>
 
 ## What is hopr.gov.et?
-Add information about the project.
+Add information about the project. The goal of the project is to deliver to the content content delivery team. The content delivery team are the end product
+for us as they are the ones that will organize the content using the admin panels, tools etc. that we create, set it up on the server and provide it for users.
 
 ## Building the project
 Add information on building the project.
