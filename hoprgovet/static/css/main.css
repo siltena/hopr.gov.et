@@ -1,0 +1,68 @@
+body {
+		position: relative;
+}
+
+.header-link {
+	font-size: 14px;
+	font-family: "Segoe UI";
+	font-weight: 600;
+}
+
+.dropdown-link {
+	font-size: 14px;
+	font-family: "Segoe UI";
+}
+
+.nav-tabs .nav-item {
+	font-size: 12px;
+}
+
+.list-group h5 {
+	font-size: 14px;
+}
+
+.list-group p {
+	font-size: 13px;
+}
+
+.list-group small {
+	font-size: 12px;
+}
+
+.tab-pane .list-group {
+	max-height: 250px;
+	overflow-y: scroll;
+}
+
+.nav-link {
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+#v-pills-tab {
+	font-size: 12px;
+}
+
+#v-pills-tabContent {
+	font-size: 12px;
+	min-height: 254px;
+}
+
+/**
+ * Scrollbar
+ */
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+	background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: #555;
+}
