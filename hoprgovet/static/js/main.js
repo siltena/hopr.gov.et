@@ -1,13 +1,16 @@
 $(document).ready(function() {
-		/**
+		NOTIFICATIONS_ENABLED = false;
+        /**
 		 * Animate the toasts on page load.
 		 */
-		setTimeout(function () {
-			$("#live-toast").toast("show");
-			setTimeout(function () {
-				$("#reply-toast").toast("show");
-			}, 1000);
-		}, 2000);
+        if (NOTIFICATIONS_ENABLED == true) {
+            setTimeout(function () {
+                $("#live-toast").toast("show");
+                setTimeout(function () {
+                    $("#reply-toast").toast("show");
+                }, 1000);
+            }, 2000);
+        }
 
 		/**
 		 * Animate the live button (fade in and out).
