@@ -56,9 +56,9 @@ $(document).ready(function() {
         /**
          * Animate regions with hover effect.
          */
-        const animationSpeed = 500;
+        const animationSpeed = 200;
         const hoverStyle = {
-            fill: "#A8BED5"
+            fill: "#2b7acf"
         };
 
 		for (let regionName in regions) {

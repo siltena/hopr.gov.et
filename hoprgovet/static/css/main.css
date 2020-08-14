@@ -18,20 +18,24 @@ body {
 }
 
 .list-group h5 {
-	font-size: 14px;
-}
-
-.list-group p {
 	font-size: 13px;
 }
 
-.list-group small {
+.list-group p {
 	font-size: 12px;
+}
+
+.list-group small {
+	font-size: 11px;
 }
 
 .tab-pane .list-group {
 	max-height: 250px;
 	overflow-y: scroll;
+}
+
+.tab-pane .list-group-item {
+    padding: 9px;
 }
 
 .nav-link {
@@ -65,4 +69,17 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
 	background: #555;
+}
+
+.tab-pane {
+    margin-top: 10px
+}
+
+p.officer-title {
+    font-size: 10pt;
+    margin-bottom: 3px;
+}
+
+p.officer-name {
+    font-size: 8pt;
 }
