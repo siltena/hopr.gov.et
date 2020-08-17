@@ -17,6 +17,10 @@ body {
 	font-size: 12px;
 }
 
+.nav-pills .nav-item {
+    font-size: 12px;
+}
+
 .list-group h5 {
 	font-size: 13px;
 }
@@ -30,7 +34,7 @@ body {
 }
 
 .tab-pane .list-group {
-	max-height: 250px;
+	max-height: 220px;
 	overflow-y: scroll;
 }
 
