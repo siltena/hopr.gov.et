@@ -87,3 +87,7 @@ p.officer-title {
 p.officer-name {
     font-size: 8pt;
 }
+
+.dropdown .dropdown-languages {
+    font-size: 12pt;
+}
