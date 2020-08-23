@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <title>House of Peoples' Representatives</title>
@@ -92,10 +91,12 @@
                         </div>
                     </li>
                 </ul>
-                <div class="border rounded mr-4">
-                    <i id="live-status" class="fa fa-circle mr-2 ml-2" aria-hidden="true" style="color: red; font-size: 10px"></i>
-                    <small class="mr-2" style="font-size: 12px">Live</small>
-                </div>
+                <a class="live-status-btn" href="#">
+                    <div class="border rounded mr-4">
+                        <i id="live-status" class="fa fa-circle mr-2 ml-2" aria-hidden="true" style="color: red; font-size: 10px"></i>
+                        <small class="mr-2" style="font-size: 12px">Live</small>
+                    </div>
+                </a>
                 <form class="form-inline my-2 my-lg-0">
                     <div class="input-group input-group-sm">
                         <input class="form-control" type="search" aria-label="Search">
@@ -104,22 +105,21 @@
                         </div>
                     </div>
                 </form>
-                <div class="dropdown dropdown-languages">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Dropdown button
+                <div class="dropdown dropdown-languages ml-2">
+                    <button class="btn btn-secondary dropdown-toggle languages-dropdown-btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-globe mr-2"></i>EN    
                     </button>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item languages-dropdown-item" href="#">አማርኛ</a>
+                        <a class="dropdown-item languages-dropdown-item" href="#">Afaan Oromoo</a>
+                        <a class="dropdown-item languages-dropdown-item" href="#">ትግርኛ</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <div class="border-top pt-2">
+        <div class="border-top">
             <div class="row">
-                <div class="col-sm-7">
+                <div class="col-sm-7 mt-3">
                     <div id="carousel-example-1z" class="carousel slide" data-ride="carousel">
                         <!-- Indicators -->
                         <ol class="carousel-indicators">
@@ -166,7 +166,7 @@
                     </div>
                 </div>
                 <div class="col-sm-5 border-left">
-                    <ul class="nav nav-tabs nav-fill" role="tablist">
+                    <ul class="nav nav-tabs nav-fill mt-3" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="news-tab" data-toggle="tab" href="#news" role="tab" aria-controls="news" aria-selected="true">News</a>
                         </li>
@@ -259,15 +259,15 @@
                 </div>
             </div>
         </div>
-        <div class="border-top mt-2 pt-2">
+        <div class="border-top">
             <div class="row">
-                <div class="col-sm-2">
+                <div class="col-sm-2 mt-3">
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="nav-link active" id="v-pills-tab" data-toggle="pill" href="#v-pills-representatives" role="tab" aria-controls="v-pills-representatives" aria-selected="true">Representatives</a>
                         <a class="nav-link" id="v-pills-committees-tab" data-toggle="pill" href="#v-pills-committees" role="tab" aria-controls="v-pills-committees" aria-selected="false">Committees</a>
                     </div>
                 </div>
-                <div class="col-sm-5">
+                <div class="col-sm-5 mt-1">
                     <div class="tab-content" id="v-pills-tabContent">
                         <div class="tab-pane fade show active" id="v-pills-representatives" role="tabpanel" aria-labelledby="v-pills-representatives-tab">
                             <!-- Representatives -->
@@ -289,7 +289,7 @@
                     </div>
                 </div>
                 <div class="col-sm-5 border-left">
-                    <ul class="nav nav-pills nav-fill" role="tablist">
+                    <ul class="nav nav-pills nav-fill mt-3" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active" id="proclamations-tab" data-toggle="tab" href="#proclamations" role="tab" aria-controls="proclamations" aria-selected="true">Proclamations</a>
                         </li>
@@ -326,8 +326,8 @@
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
-                                        <small>oct 15, 2020</small>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
+                                        <small><span class="badge badge-danger">FAILED</span> Oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
@@ -337,28 +337,28 @@
                             <ul class="list-group list-group-flush">
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
@@ -369,28 +369,28 @@
                             <ul class="list-group list-group-flush">
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
                                 </a>
                                 <a class="list-group-item list-group-item-action flex-column align-items-start" href="#">
                                     <div class="d-flex w-100 justify-content-between">
-                                        <h5 class="mb-1">proclamation no. 5/2020</h5>
+                                        <h5 class="mb-1">Proclamation No. 5/2020</h5>
                                         <small>oct 15, 2020</small>
                                     </div>
                                     <p class="mb-1">this is a brief description of the proclamation that provides enough info to decide whether to click or not.</p>
@@ -401,49 +401,85 @@
                 </div>
             </div>
         </div>
-        <div class="border-top mt-2 pt-2">
-            <div class="row">
+        <div class="border-top pt-2">
+            <div class="row mt-2">
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem">
-                        {% load static %}
-                        <img class="card-img-top" style="width: 120px;" src="{% static "hoprgovet/logo.png" %}" alt="Card placeholder image">
+                        <svg width="256" height="200">
+                            <rect width="256" height="256" style="fill:rgb(230,230,230);"/>   
+                        </svg>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                             <p class="card-text">Some information that provides more information on what the card provides.</p>
-                            <a class="btn btn-primary" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem">
-                        {% load static %}
-                        <img class="card-img-top" style="width: 120px;" src="{% static "hoprgovet/logo.png" %}" alt="Card placeholder image">
+                        <svg width="256" height="200">
+                            <rect width="256" height="256" style="fill:rgb(230,230,230);"/>   
+                        </svg>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                             <p class="card-text">Some information that provides more information on what the card provides.</p>
-                            <a class="btn btn-primary" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem">
-                        {% load static %}
-                        <img class="card-img-top" style="width: 120px;" src="{% static "hoprgovet/logo.png" %}" alt="Card placeholder image">
+                        <svg width="256" height="200">
+                            <rect width="256" height="256" style="fill:rgb(230,230,230);"/>   
+                        </svg>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                             <p class="card-text">Some information that provides more information on what the card provides.</p>
-                            <a class="btn btn-primary" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-3">
                     <div class="card" style="width: 16rem">
-                        {% load static %}
-                        <img class="card-img-top" style="width: 120px;" src="{% static "hoprgovet/logo.png" %}" alt="Card placeholder image">
+                        <svg width="256" height="200">
+                            <rect width="256" height="256" style="fill:rgb(230,230,230);"/>   
+                        </svg>
                         <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
+                            <div class="row">
+                                <div class="col-sm-10">
+                                    <h5 class="card-title">Card title</h5>
+                                </div>
+                                <div class="col-sm-2">
+                                    <a href="#">
+                                        <i class="fa fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
                             <p class="card-text">Some information that provides more information on what the card provides.</p>
-                            <a class="btn btn-primary" href="#">Learn more</a>
                         </div>
                     </div>
                 </div>
@@ -479,12 +515,11 @@
                     </ul>
                 </div>
                 <div class="col-6 col-md pt-md-4">
-                    <h6>Category</h6>
+                    <h6>Feedback</h6>
                     <ul class="list-unstyled text-small">
-                        <li><a class="text-muted" href="#"><small>Site Map</small></a></li>
-                        <li><a class="text-muted" href="#"><small>Site Tools</small></a></li>
-                        <li><a class="text-muted" href="#"><small>Terms of Use</small></a></li>
-                        <li><a class="text-muted" href="#"><small>Watch live.house.gov.et</small></a></li>
+                        <li><a class="text-muted" href="#"><small>Report an Issue</small></a></li>
+                        <li><a class="text-muted" href="#"><small>FAQ</small></a></li>
+                        <li><a class="text-muted" href="#"><small>Support</small></a></li>
                     </ul>
                 </div>
             </div>

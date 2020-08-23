@@ -88,6 +88,29 @@ p.officer-name {
     font-size: 8pt;
 }
 
-.dropdown .dropdown-languages {
-    font-size: 12pt;
+.languages-dropdown-btn, .languages-dropdown-item {
+    font-size: 9pt;
+}
+
+.card-body .card-title {
+    font-size: 13pt;
+}
+
+.card-body .card-text {
+    font-size: 10pt;
+}
+
+.card-body .btn {
+    font-size: 9pt;
+}
+
+a.live-status-btn {
+    text-decoration: inherit;
+    color: inherit;
+    cursor: auto;
+}
+
+a.live-status-btn:hover {
+    text-decoration: none;
+    cursor: pointer;
 }
